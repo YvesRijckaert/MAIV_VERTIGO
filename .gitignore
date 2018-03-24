@@ -1,4 +1,7 @@
-
+node_modules
 src/.DS_Store
 src/assets/.DS_Store
 src/assets/img/.DS_Store
+.vscode
+yarn.lock
+yarn-error.log

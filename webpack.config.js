@@ -3,9 +3,6 @@ const HtmlWebpackPlugin = require(`html-webpack-plugin`);
 const webpack = require(`webpack`);
 const merge = require(`webpack-merge`);
 const parts = require(`./webpack.parts`);
-
-const port = 3000;
-
 const ImageminPlugin = require(`imagemin-webpack-plugin`).default;
 const ImageminJpegRecompress = require(`imagemin-jpeg-recompress`);
 
@@ -13,15 +10,18 @@ const CriticalPlugin = require(`webpack-plugin-critical`).CriticalPlugin;
 
 const PATHS = {
   src: path.join(__dirname, `src`),
-  dist: path.join(__dirname, `dist`),
+  dist: path.join(__dirname, `dist`)
 };
 
 const commonConfig = merge([
   {
-    entry: [path.join(PATHS.src, `css/style.css`)],
+    entry: [
+      path.join(PATHS.src, `js/App.js`),
+      path.join(PATHS.src, `css/style.css`),
+    ],
     output: {
       path: PATHS.dist,
-      filename: `js/script.[hash].js`,
+      filename: `js/script.[hash].js`
     },
     module: {
       rules: [
@@ -29,9 +29,10 @@ const commonConfig = merge([
           test: /\.html$/,
           loader: `html-loader`,
           options: {
-            attrs: [`img:src`, `source:srcset`],
-          },
-        }, {
+            attrs: [`img:src`, `source:srcset`]
+          }
+        },
+        {
           test: /\.(jpe?g|png|gif|webp|svg)$/,
           use: [
             {
@@ -39,48 +40,50 @@ const commonConfig = merge([
               options: {
                 limit: 1000,
                 context: `./src`,
-                name: `[path][name].[ext]`,
-              },
-            }, {
+                name: `[path][name].[ext]`
+              }
+            },
+            {
               loader: `image-webpack-loader`,
               options: {
                 mozjpeg: {
                   progressive: true,
-                  quality: 65,
+                  quality: 65
                 },
                 optipng: {
-                  enabled: false,
+                  enabled: false
                 },
                 pngquant: {
                   quality: `65-90`,
-                  speed: 4,
+                  speed: 4
                 },
                 gifsicle: {
-                  interlaced: false,
+                  interlaced: false
                 },
                 webp: {
-                  quality: 75,
-                },
-              },
-            },
-          ],
-        }, {
-          test: /\.(js)$/,
+                  quality: 75
+                }
+              }
+            }
+          ]
+        },
+        {
+          test: /\.(jsx?)$/,
           exclude: /node_modules/,
           use: [`babel-loader`, `eslint-loader`],
-        },
-      ],
+        }
+      ]
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: `./src/index.html`,
+        template: `./src/index.html`
       }),
       new webpack.ProvidePlugin({
         Promise: `es6-promise`,
-        fetch: `imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch`,
-      }),
-    ],
-  },
+        fetch: `imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch`
+      })
+    ]
+  }
 ]);
 
 const productionConfig = merge([
@@ -89,28 +92,26 @@ const productionConfig = merge([
     plugins: [
       new ImageminPlugin({
         test: /\.(jpe?g)$/i,
-        plugins: [
-          ImageminJpegRecompress({}),
-        ],
+        plugins: [ImageminJpegRecompress({})]
       }),
       new CriticalPlugin({
         src: `index.html`,
         inline: true,
         minify: true,
-        dest: `index.html`,
-      }),
-    ],
-  },
+        dest: `index.html`
+      })
+    ]
+  }
 ]);
 
 const developmentConfig = merge([
   {
     devServer: {
       overlay: true,
-      contentBase: PATHS.src,
-    },
+      contentBase: PATHS.src
+    }
   },
-  parts.loadCSS(),
+  parts.loadCSS()
 ]);
 
 module.exports = env => {
