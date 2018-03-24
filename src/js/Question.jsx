@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Question = ({content}) => {
-  return <p>{content}</p>;
+const Question = ({vraag}) => {
+  return <p>{vraag}</p>;
 };
 
 Question.propTypes = {
-  content: PropTypes.string.isRequired
+  vraag: PropTypes.string.isRequired
 };
 
 export default Question;

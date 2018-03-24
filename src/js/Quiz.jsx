@@ -3,7 +3,7 @@ import Question from './Question.jsx';
 
 
 const Quiz = () => {
-  return <Question />;
+  return <Question vraag='Dit is een vraag' />;
 };
 
 export default Quiz;
