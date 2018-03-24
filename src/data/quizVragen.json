@@ -1,0 +1,87 @@
+[
+  {
+    "question": "Dit is vraag 1?",
+    "answers": [
+      {
+        "type": "Personage1",
+        "content": "Lorem"
+      },
+      {
+        "type": "Personage2",
+        "content": "Ipsum"
+      },
+      {
+        "type": "Personage3",
+        "content": "Dolor"
+      }
+    ]
+  },
+  {
+    "question": "Dit is vraag 2?",
+    "answers": [
+      {
+        "type": "Personage1",
+        "content": "Sid"
+      },
+      {
+        "type": "Personage2",
+        "content": "Amet"
+      },
+      {
+        "type": "Personage3",
+        "content": "Lorem"
+      }
+    ]
+  },
+  {
+    "question": "Dit is vraag 3?",
+    "answers": [
+      {
+        "type": "Personage1",
+        "content": "Lorem"
+      },
+      {
+        "type": "Personage2",
+        "content": "Ipsum"
+      },
+      {
+        "type": "Personage3",
+        "content": "Dolor"
+      }
+    ]
+  },
+  {
+    "question": "Dit is vraag 4?",
+    "answers": [
+      {
+        "type": "Personage1",
+        "content": "Amet"
+      },
+      {
+        "type": "Personage2",
+        "content": "Sid"
+      },
+      {
+        "type": "Personage3",
+        "content": "Dolor"
+      }
+    ]
+  },
+  {
+    "question": "Dit is vraag 5?",
+    "answers": [
+      {
+        "type": "Personage1",
+        "content": "Lorem"
+      },
+      {
+        "type": "Personage2",
+        "content": "Ipsum"
+      },
+      {
+        "type": "Personage3",
+        "content": "Dolor"
+      }
+    ]
+  }
+]
