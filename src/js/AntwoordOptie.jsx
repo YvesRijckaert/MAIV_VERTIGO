@@ -2,22 +2,23 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const AntwoordOptie = ({
-  personage,
+  antwoordPersonage,
   antwoord,
   antwoordContent,
   onAntwoordSelected
 }) => {
   return (
-    <li className='answerOption'>
+    <li>
       <input
         type='radio'
-        checked={personage === antwoord} //checked is true als het personage = antwoord, false als het niet zo is
-        id={personage}
-        value={personage}
+        name='radioGroup'
+        checked={antwoordPersonage === antwoord}
+        id={antwoordPersonage}
+        value={antwoordPersonage}
         disabled={antwoord}
         onChange={onAntwoordSelected}
       />
-      <label  htmlFor={personage}>
+      <label htmlFor={antwoordPersonage}>
         {antwoordContent}
       </label>
     </li>
@@ -25,7 +26,7 @@ const AntwoordOptie = ({
 };
 
 AntwoordOptie.propTypes = {
-  personage: PropTypes.string.isRequired,
+  antwoordPersonage: PropTypes.string.isRequired,
   antwoordContent: PropTypes.string.isRequired,
   antwoord: PropTypes.string.isRequired,
   onAntwoordSelected: PropTypes.func.isRequired

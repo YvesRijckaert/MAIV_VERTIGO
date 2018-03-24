@@ -1,16 +1,22 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Vraag from "./Vraag.jsx";
 import VraagTeller from "./VraagTeller.jsx";
 import AntwoordOptie from "./AntwoordOptie.jsx";
-import PropTypes from "prop-types";
 
-const Quiz = ({antwoord, vraagId, vraagTotaal, vraag, antwoordMogelijkheden, onAntwoordSelected}) => {
-
-  const renderAntwoordMogelijkheden = key => (
+const Quiz = ({
+  antwoord,
+  antwoordOpties,
+  vraag,
+  vraagId,
+  vraagTotaal,
+  onAntwoordSelected
+}) => {
+  const renderAnswerOptions = antwoordObject => (
     <AntwoordOptie
-      key={key.content}
-      antwoordContent={key.content}
-      personage={key.type}
+      key={antwoordObject.content}
+      antwoordContent={antwoordObject.content}
+      antwoordPersonage={antwoordObject.personage}
       antwoord={antwoord}
       vraagId={vraagId}
       onAntwoordSelected={onAntwoordSelected}
@@ -18,22 +24,21 @@ const Quiz = ({antwoord, vraagId, vraagTotaal, vraag, antwoordMogelijkheden, onA
   );
 
   return (
-    <div>
+    <div key={vraagId}>
       <VraagTeller teller={vraagId} totaal={vraagTotaal} />
-      <Vraag content={vraag} />
-      <ul>
-        {antwoordMogelijkheden.map(renderAntwoordMogelijkheden)}
-      </ul>
+      <Vraag vraag={vraag} />
+      <ul>{antwoordOpties.map(renderAnswerOptions)}</ul>
     </div>
   );
 };
 
 Quiz.propTypes = {
   antwoord: PropTypes.string.isRequired,
+  antwoordOpties: PropTypes.array.isRequired,
+  teller: PropTypes.number.isRequired,
+  vraag: PropTypes.string.isRequired,
   vraagId: PropTypes.number.isRequired,
   vraagTotaal: PropTypes.number.isRequired,
-  vraag: PropTypes.string.isRequired,
-  antwoordMogelijkheden: PropTypes.array.isRequired,
   onAntwoordSelected: PropTypes.func.isRequired
 };
 
