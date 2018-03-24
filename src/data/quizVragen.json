@@ -1,85 +1,85 @@
 [
   {
-    "question": "Dit is vraag 1?",
-    "answers": [
+    "vraag": "Dit is vraag 1?",
+    "antwoorden": [
       {
-        "type": "Personage1",
+        "personage": "Personage1",
         "content": "Lorem"
       },
       {
-        "type": "Personage2",
+        "personage": "Personage2",
         "content": "Ipsum"
       },
       {
-        "type": "Personage3",
+        "personage": "Personage3",
         "content": "Dolor"
       }
     ]
   },
   {
-    "question": "Dit is vraag 2?",
-    "answers": [
+    "vraag": "Dit is vraag 2?",
+    "antwoorden": [
       {
-        "type": "Personage1",
+        "personage": "Personage1",
         "content": "Sid"
       },
       {
-        "type": "Personage2",
+        "personage": "Personage2",
         "content": "Amet"
       },
       {
-        "type": "Personage3",
+        "personage": "Personage3",
         "content": "Lorem"
       }
     ]
   },
   {
-    "question": "Dit is vraag 3?",
-    "answers": [
+    "vraag": "Dit is vraag 3?",
+    "antwoorden": [
       {
-        "type": "Personage1",
+        "personage": "Personage1",
         "content": "Lorem"
       },
       {
-        "type": "Personage2",
+        "personage": "Personage2",
         "content": "Ipsum"
       },
       {
-        "type": "Personage3",
+        "personage": "Personage3",
         "content": "Dolor"
       }
     ]
   },
   {
-    "question": "Dit is vraag 4?",
-    "answers": [
+    "vraag": "Dit is vraag 4?",
+    "antwoorden": [
       {
-        "type": "Personage1",
+        "personage": "Personage1",
         "content": "Amet"
       },
       {
-        "type": "Personage2",
+        "personage": "Personage2",
         "content": "Sid"
       },
       {
-        "type": "Personage3",
+        "personage": "Personage3",
         "content": "Dolor"
       }
     ]
   },
   {
-    "question": "Dit is vraag 5?",
-    "answers": [
+    "vraag": "Dit is vraag 5?",
+    "antwoorden": [
       {
-        "type": "Personage1",
+        "personage": "Personage1",
         "content": "Lorem"
       },
       {
-        "type": "Personage2",
+        "personage": "Personage2",
         "content": "Ipsum"
       },
       {
-        "type": "Personage3",
+        "personage": "Personage3",
         "content": "Dolor"
       }
     ]

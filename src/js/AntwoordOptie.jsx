@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const AnswerOption = ({
+const AntwoordOptie = ({
   personage,
   antwoord,
   antwoordContent,
@@ -24,11 +24,11 @@ const AnswerOption = ({
   );
 };
 
-AnswerOption.propTypes = {
+AntwoordOptie.propTypes = {
   personage: PropTypes.string.isRequired,
   antwoordContent: PropTypes.string.isRequired,
   antwoord: PropTypes.string.isRequired,
   onAntwoordSelected: PropTypes.func.isRequired
 };
 
-export default AnswerOption;
+export default AntwoordOptie;
