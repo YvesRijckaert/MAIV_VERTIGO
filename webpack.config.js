@@ -114,7 +114,7 @@ const developmentConfig = merge([
   parts.loadCSS()
 ]);
 
-module.exports = env => {
+module.exports = () => {
   if (process.env.NODE_ENV === `production`) {
     console.log(`building production`);
     return merge(commonConfig, productionConfig);
