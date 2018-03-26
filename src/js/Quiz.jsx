@@ -12,22 +12,18 @@ const Quiz = ({
   vraagTotaal,
   onAntwoordSelected
 }) => {
-  const renderAnswerOptions = antwoordObject => (
-    <AntwoordOptie
-      key={antwoordObject.content}
-      antwoordContent={antwoordObject.content}
-      antwoordPersonage={antwoordObject.personage}
-      antwoord={antwoord}
-      vraagId={vraagId}
-      onAntwoordSelected={onAntwoordSelected}
-    />
-  );
-
   return (
     <div key={vraagId}>
       <VraagTeller teller={vraagId} totaal={vraagTotaal} />
       <Vraag vraag={vraag} />
-      <ul>{antwoordOpties.map(renderAnswerOptions)}</ul>
+      <ul>{antwoordOpties.map(antwoordObject => (<AntwoordOptie
+        key={antwoordObject.content}
+        antwoordContent={antwoordObject.content}
+        antwoordPersonage={antwoordObject.personage}
+        antwoord={antwoord}
+        vraagId={vraagId}
+        onAntwoordSelected={onAntwoordSelected}
+      />))}</ul>
     </div>
   );
 };
@@ -35,7 +31,6 @@ const Quiz = ({
 Quiz.propTypes = {
   antwoord: PropTypes.string.isRequired,
   antwoordOpties: PropTypes.array.isRequired,
-  teller: PropTypes.number.isRequired,
   vraag: PropTypes.string.isRequired,
   vraagId: PropTypes.number.isRequired,
   vraagTotaal: PropTypes.number.isRequired,

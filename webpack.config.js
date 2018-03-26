@@ -16,7 +16,7 @@ const PATHS = {
 const commonConfig = merge([
   {
     entry: [
-      path.join(PATHS.src, `js/index.js`),
+      path.join(PATHS.src, `js/index.jsx`),
       path.join(PATHS.src, `css/style.css`),
     ],
     output: {

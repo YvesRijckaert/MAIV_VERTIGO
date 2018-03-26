@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import Quiz from "./Quiz.jsx";
 import Resultaat from "./Resultaat.jsx";
-import update from 'react-addons-update';
+import update from "react-addons-update";
 let quizVragen = 0;
 
 class App extends Component {
@@ -20,8 +20,6 @@ class App extends Component {
       },
       resultaat: ``
     };
-    this.handleAntwoordSelected = this.handleAntwoordSelected.bind(this);
-    this.parseJSON = this.parseJSON.bind(this);
   }
 
   componentDidMount() {
@@ -31,8 +29,9 @@ class App extends Component {
   }
 
   shuffleArray(array) {
-    console.log(`hallo!`);
-    let currentIndex = array.length, temporaryValue, randomIndex;
+    let currentIndex = array.length,
+      temporaryValue,
+      randomIndex;
     while (0 !== currentIndex) {
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;
@@ -43,16 +42,14 @@ class App extends Component {
     return array;
   }
 
-  parseJSON(data) {
-    quizVragen = data;
-    const shuffledAntwoordOpties = quizVragen.map(vraag =>
-      this.shuffleArray(vraag.antwoorden)
-    );
+  parseJSON = data => {
+    quizVragen = data; //steek data in globale variabele quizVragen
+    const shuffledAntwoordOpties = quizVragen.map(vraag => this.shuffleArray(vraag.antwoorden));
     this.setState({
-      vraag: data[0].vraag,
-      antwoordOpties: shuffledAntwoordOpties[0]
+      vraag: quizVragen[0].vraag, //haal de eerste vraag op en set die in de inital state
+      antwoordOpties: shuffledAntwoordOpties[0] //haal het eerste geshuffelde antwoord
     });
-  }
+  };
 
   setUserAnswer(antwoord) {
     const updatedAnswersCount = update(this.state.answersCount, {
@@ -88,19 +85,21 @@ class App extends Component {
     //calculates which answer type (Personage1, Personage2 of Personage3) has the highest number - aka the quiz result.
     const answersCount = this.state.answersCount;
     const answersCountKeys = Object.keys(answersCount); //return an array of strings that represent all the properties of an object
-    const answersCountValues = answersCountKeys.map(answerCountKey => answersCount[answerCountKey]); //mapping over the array to return an array of the values
+    const answersCountValues = answersCountKeys.map(
+      answerCountKey => answersCount[answerCountKey]
+    ); //mapping over the array to return an array of the values
     const maxAnswerCount = Math.max.apply(null, answersCountValues); //Then we can get the highest number of that array with Math.max.apply
     return answersCountKeys.filter(key => answersCount[key] === maxAnswerCount); //calculate which key has a value equal to the maxAnswerCount using the filter method and return it
   }
 
-  handleAntwoordSelected(e) {
+  handleAntwoordSelected = e => {
     this.setUserAnswer(e.currentTarget.value);
     if (this.state.vraagId < quizVragen.length) {
       setTimeout(() => this.setNextQuestion(), 300);
     } else {
       setTimeout(() => this.setResults(this.getResults()), 300);
     }
-  }
+  };
 
   renderQuiz() {
     const {antwoord, antwoordOpties, vraagId, vraag} = this.state;
@@ -118,9 +117,7 @@ class App extends Component {
 
   renderResult() {
     const {resultaat} = this.state;
-    return (
-      <Resultaat resultaat={resultaat} />
-    );
+    return <Resultaat resultaat={resultaat} />;
   }
 
   render() {
