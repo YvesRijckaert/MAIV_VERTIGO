@@ -4,7 +4,7 @@ import Resultaat from "./Resultaat.jsx";
 import update from "react-addons-update";
 let quizVragen = 0;
 
-class App extends Component {
+class QuizApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -133,4 +133,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default QuizApp;
