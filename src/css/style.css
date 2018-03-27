@@ -159,7 +159,7 @@ strong {
 
 .vader {
   display: grid;
-  grid-template: repeat(7, min-content) / .3fr min-content 2fr .3fr;
+  grid-template: repeat(4, min-content) .6fr .6fr .6fr min-content / .3fr min-content 2fr .3fr;
   grid-gap: 5rem;
   grid-template-areas:
     '. vader-image vader-info .'
@@ -168,9 +168,9 @@ strong {
     '. article1 article2 .'
     '. article3 article3 .'
     '. quote quote .'
-    '. . polaroid1 .'
-    '. . polaroid2 .'
-    '. . polaroid3 .'
+    '. kritisch . .'
+    '. kritisch . .'
+    '. kritisch . .'
     'lick lick lick lick';
 }
 
@@ -214,7 +214,7 @@ strong {
   grid-area: quote;
   align-self: center;
   justify-self: center;
-  margin-right: 20vmax;
+  margin-right: 30vmax;
 }
 
 .raspberry-image, .sofia-godfather-part3-image, .bloem-image {
@@ -240,20 +240,36 @@ strong {
   right: 8rem;
 }
 
+.polaroid1-image, .polaroid2-image, .polaroid3-image {
+  grid-column: 3;
+  justify-self: flex-end;
+}
+
 .polaroid1-image {
-  grid-area: polaroid1;
+  grid-row: 6 / 9;
 }
 
 .polaroid2-image {
-  grid-area: polaroid2;
+  grid-row: 7 / 9;
 }
 
 .polaroid3-image {
-  grid-area: polaroid3;
+  grid-row: 8 / 9;
 }
 
 .lick-the-star-image {
   grid-area: lick;
   width: 100%;
   object-fit: cover;
+}
+
+/* kritisch */
+
+.kritisch {
+  position: relative;
+  z-index: 2;
+  grid-area: kritisch;
+  width: 30vmax;
+  background-color: var(--glitter);
+  padding: 5rem 3rem;
 }
