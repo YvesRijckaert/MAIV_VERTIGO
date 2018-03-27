@@ -59,10 +59,10 @@ const commonConfig = merge([
                 },
                 gifsicle: {
                   interlaced: false
-                },
+                }/*,
                 webp: {
                   quality: 75
-                }
+                }*/
               }
             }
           ]
