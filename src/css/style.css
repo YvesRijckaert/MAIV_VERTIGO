@@ -20,6 +20,10 @@ body {
   display: none;
 }
 
+strong {
+  font-weight: bold;
+}
+
 /* header */
 
 .header {
@@ -88,11 +92,20 @@ body {
 
 /* intro */
 
-.header-intro, .intro-highlight {
+.intro {
+  display: grid;
+  grid-template: 2fr 1fr / 1fr 1fr .3fr;
+  grid-template-areas:
+    'social intro .'
+    '. quote .';
+}
+
+.header-intro, .intro-highlight, .header-vader {
   font-weight: bold;
 }
 
 .intro-text {
+  grid-area: intro;
   width: 50vmax;
   background-color: var(--glitter);
   padding: 5rem 3rem;
@@ -101,11 +114,123 @@ body {
   top: -5rem;
 }
 
+.quote {
+  width: 40vmax;
+  background-color: rgba(250, 205, 211, .33);
+  padding: 5rem 3rem;
+  border-left: 1rem solid var(--maya-blue);
+}
+
+.quote-intro {
+  grid-area: quote;
+  align-self: flex-end;
+}
+
 .intro-highlight {
   color: var(--honey-flower);
 }
 
-.CTA-social {
+.social {
+  grid-area: social;
+  justify-self: center;
+  align-self: center;
+}
+
+.CTA-social, .godfather-title {
   text-transform: uppercase;
   color: var(--maya-blue);
+}
+
+.cite {
+  display: block;
+  text-transform: uppercase;
+  color: var(--honey-flower);
+  font-weight: bold;
+}
+
+/* clan */
+
+.clan-title, .vader-title, .kritisch-title {
+  font-size: var(--font-size-subtitle);
+  color: var(--honey-flower);
+}
+
+/* vader */
+
+.vader {
+  display: grid;
+  grid-template: repeat(7, min-content) / .5fr min-content 2fr .5fr;
+  grid-template-areas:
+    '. vader-image vader-title .'
+    '. vader-image header-vader .'
+    '. vader-image header-p .'
+    '. article1 article2 .'
+    '. article3 article3 .'
+    '. quote . .'
+    '. . polaroid1 .'
+    '. . polaroid2 .'
+    '. . polaroid3 .'
+    'lick lick lick lick';
+}
+
+.vader-image-block {
+  grid-area: vader-image;
+  align-self: flex-end;
+}
+
+.vader-image {
+  border-bottom: 1rem solid var(--pink-lace);
+  max-width: 40vw;
+  height: auto;
+}
+
+.vader-title {
+  grid-area: vader-title;
+}
+
+.header-vader {
+  grid-area: header-vader;
+}
+
+.header-p {
+  grid-area: header-p;
+}
+
+.godfather1 {
+  grid-area: article1;
+}
+
+.godfather2 {
+  grid-area: article2;
+}
+
+.godfather3 {
+  grid-area: article3;
+}
+
+.vader-quote {
+  grid-area: quote;
+}
+
+.raspberry-image, .sofia-godfather-part3-image, .bloem-image {
+  grid-row: 6 / 7;
+  grid-column: 3 / 4;
+}
+
+.polaroid1-image {
+  grid-area: polaroid1;
+}
+
+.polaroid2-image {
+  grid-area: polaroid2;
+}
+
+.polaroid3-image {
+  grid-area: polaroid3;
+}
+
+.lick-the-star-image {
+  grid-area: lick;
+  width: 100%;
+  object-fit: cover;
 }
