@@ -3,16 +3,140 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tribute site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Yves Rijckaert, Arthur Peck" />
+  <meta name="description" content="Tribute site for Sofia Coppola" />
+  <title>Sofia Coppola - Het losbreken van nepotisme</title>
 </head>
 
 <body>
-  <header>
-    <h1>Tribute site</h1>
+  <header class="header">
+    <h1 class="hide title">Soffia Coppola</h1>
+    <svg height="60" width="200">
+      <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Sofia Coppola</text>
+    </svg>
+    <p class="subtitle">Het losbreken van nepotisme</p>
   </header>
   <main>
-    <div id="slider"></div>
+    <section class="intro">
+      <h2 class="hide">Intro</h2>
+      <div>
+        <header>Sofia Coppola is de dochter van de Oscarwinnende filmregisseur Francis Ford Coppola en ze is de regisseur van acht
+          langspeelfilms.
+        </header>
+        <p>Sofie Coppola woont in NYC, samen met haar man, de Franse muzikant Thomas Mars. Ze hebben samen 2 jonge kinderen.</p>
+        <p>Ondanks het feit dat Sofia veel steun en werk meekreeg van haar vader is ze toch in grote mate zelf verantwoordelijk
+          voor haar eigen succes.</p>
+        <p>Vertigo ging op onderzoek en brengt door deze interessante longread een hulde aan Sofia Coppola.</p>
+      </div>
+      <blockquote>
+        <q>Everyone in my family is in the film business; I knew I wanted to be creative and it was important in my family to
+          be artistic.</q>
+        <cite>Sofia Coppola</cite>
+      </blockquote>
+    </section>
+
+    <section class="clan">
+      <h2>De Coppola Clan</h2>
+      <div id="slider"></div>
+    </section>
+
+    <section class="vader">
+      <h2>Sofia en haar vader</h2>
+      <picture>
+        <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
+        <source media="(min-width: 450px)" srcset="assets/img/vader.webp" type="image/webp" />
+        <source media="(min-width: 450px)" srcset="assets/img/vader.jpg" />
+        <img class="vader-image" height="329" width="320" alt="Sofia Coppola en haar vader" />
+      </picture>
+      <picture>
+        <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
+        <source media="(min-width: 450px)" srcset="assets/img/raspberry.webp" type="image/webp" />
+        <source media="(min-width: 450px)" srcset="assets/img/raspberry.png" />
+        <img class="raspberry-image" height="206" width="174" alt="Golden Raspberry" />
+      </picture>
+      <picture>
+        <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
+        <source media="(min-width: 450px)" srcset="assets/img/sofia-godfather-part3.webp" type="image/webp" />
+        <source media="(min-width: 450px)" srcset="assets/img/sofia-godfather-part3.png" />
+        <img class="sofia-godfather-part3-image" height="451" width="302" alt="Sofia Coppola in The Godfather III" />
+      </picture>
+      <picture>
+        <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
+        <source media="(min-width: 450px)" srcset="assets/img/bloem.webp" type="image/webp" />
+        <source media="(min-width: 450px)" srcset="assets/img/bloem.png" />
+        <img class="bloem-image" height="154" width="205" alt="Bloem" />
+      </picture>
+      <picture>
+        <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
+        <source media="(min-width: 450px)" srcset="assets/img/polaroid1.webp" type="image/webp" />
+        <source media="(min-width: 450px)" srcset="assets/img/polaroid1.png" />
+        <img class="polaroid1-image" height="358" width="426" alt="Polaroid 1: Filmen van The Godfather III" />
+      </picture>
+      <picture>
+        <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
+        <source media="(min-width: 450px)" srcset="assets/img/polaroid2.webp" type="image/webp" />
+        <source media="(min-width: 450px)" srcset="assets/img/polaroid2.png" />
+        <img class="polaroid2-image" height="389" width="528" alt="Polaroid 2: Sofia Coppola en haar vader" />
+      </picture>
+      <picture>
+        <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
+        <source media="(min-width: 450px)" srcset="assets/img/polaroid3.webp" type="image/webp" />
+        <source media="(min-width: 450px)" srcset="assets/img/polaroid3.png" />
+        <img class="polaroid3-image" height="363" width="456" alt="Polaroid 3: Sofia Coppola haar trouwdag" />
+      </picture>
+      <picture>
+        <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
+        <source media="(min-width: 450px)" srcset="assets/img/lickthestar.webp" type="image/webp" />
+        <source media="(min-width: 450px)" srcset="assets/img/lickthestar.jpg" />
+        <img class="lick-the-star-image" height="558" width="1122" alt="Scene van Lick The Star" />
+      </picture>
+      <header>Ongetwijfeld hebben haar bekende vrienden en familie grotendeels geholpen met haar beginnende carrière, maar het belangrijkste
+        advies kwam altijd van haar vader.
+      </header>
+      <p>Sofia Coppola begon op jonge leeftijd als actrice. Ze speelde mee in de volgende films van haar vader, Francis Ford
+        Coppola:
+      </p>
+      <article>
+        <h3>Godfather I (1972)</h3>
+        <p>Sofia Coppola speelde Michael Corleone’s babyneefje tijdens de climax op het einde van de film.</p>
+      </article>
+      <article>
+        <h3>Godfather II (1974)</h3>
+        <p>Sofie deed ook mee in het tweede deel van “The Godfather”. Ze speelde een vluchtelingkindje in de scène waar de 9
+          jaar oude Vito Corleone toekomt op Ellis Island.
+        </p>
+      </article>
+      <article>
+        <h3>Godfather III (1990)</h3>
+        <p>Dit was de film die voor
+          <strong>opschudding</strong> zorgde. In deze film speelde ze Mary Corleone, de dochter van Michael Corleone. Er kwam
+          <strong>veel kritiek op de acteerprestatie van Sofia</strong>. Sofia Coppola won
+          <strong>twee Golden Raspberry Awards</strong> voor de slechtste actrice en de slechtste nieuwe filmster. Deze film was
+          een
+          <strong>ervaring die haar acteercarrière definitief stopzette</strong>.</p>
+        <p>Haar vader werd in het openbaar beschuldigt van vriendjespolitiek:</p>
+      </article>
+      <blockquote>
+        <q>“I never had any ambitions to be an actress,“It was something my dad asked me to do and I tried, but I am self-conscious
+          in front of the camera.”</q>
+        <cite>Sofia Coppola</cite>
+      </blockquote>
+    </section>
+
+    <section class="kritisch">
+      <h2>Kritische stemmen</h2>
+      <p>Sofia hecht geen belang aan wat mensen op internet over haar schrijven. Ook van haar eigen films bekijkt ze de reviews
+        meer niet dan wel. Ze is daar heel gevoelig voor.</p>
+      <p>Vaak hoort ze honderden positieve commentaren en slechts enkele negatieve. Toch zijn het die laatste die dan in haar
+        hoofd blijven rondzweven. Ze twittert niet en gebruikt ook geen Facebook.</p>
+      <blockquote>
+        <q>“With two young children and a career I just don’t have the time to have a virtual life, and I don’t feel that comfortable
+          sharing more things about myself”</q>
+        <cite>Sofia Coppola</cite>
+      </blockquote>
+    </section>
+
     <div id="reactcontent"></div>
   </main>
   <footer>
@@ -22,7 +146,7 @@
   <script>
     WebFontConfig = {
       google: {
-        families: ['Vollkorn: 400, 700', 'serif']
+        families: ['Oswald: 400, 700', 'Open Sans: 400, 700']
       }
     };
 

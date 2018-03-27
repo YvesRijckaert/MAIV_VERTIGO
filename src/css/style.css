@@ -9,3 +9,31 @@ html {
 *, *:before, *:after { /* stylelint-disable-line */
   box-sizing: inherit;
 }
+
+.hide {
+  display: none;
+}
+
+.header {
+  border-top: 1rem solid var(--honey-flower);
+  border-bottom: 1rem solid var(--maya-blue);
+  margin-top: 5rem;
+  height: 80vh;
+  background-image: url(../assets/img/pattern.jpg);
+  background-color: var(--pink-lace);
+  background-blend-mode: multiply;
+}
+
+.title {
+  font-size: var(--font-size-title);
+  font-family: Oswald, sans-serif;
+  font-weight: bold;
+  color: var(--pink-lace);
+}
+
+.subtitle {
+  font-size: var(--font-size-subtitle);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+}
