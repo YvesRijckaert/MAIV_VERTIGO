@@ -11,11 +11,24 @@
 
 <body>
   <header class="header">
-    <h1 class="hide title">Soffia Coppola</h1>
-    <svg height="60" width="200">
-      <text x="0" y="15" fill="red" transform="rotate(30 20,40)">Sofia Coppola</text>
-    </svg>
+    <h1 class="title">Soffia Coppola</h1>
+    <!-- <svg width="100vw" height="20vh">
+      <text class="title" x="0" y="0" text-anchor="middle" alignment-baseline="central" fill="#facdd3">Sofia Coppola</text>
+    </svg> -->
     <p class="subtitle">Het losbreken van nepotisme</p>
+    <picture>
+      <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
+      <source media="(min-width: 450px)" srcset="assets/img/header-family.webp" type="image/webp" />
+      <source media="(min-width: 450px)" srcset="assets/img/header-family.png" />
+      <img class="header-family-image" src="./assets/img/header-family.png" height="356" width="409" alt="Familie foto's van Sofia Coppola"
+      />
+    </picture>
+    <picture>
+      <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
+      <source media="(min-width: 450px)" srcset="assets/img/header-sofia.webp" type="image/webp" />
+      <source media="(min-width: 450px)" srcset="assets/img/header-sofia.png" />
+      <img class="header-sofia-image" src="./assets/img/header-sofia.png" height="496" width="372" alt="Sofia Coppola" />
+    </picture>
   </header>
   <main>
     <section class="intro">

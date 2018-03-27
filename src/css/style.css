@@ -25,6 +25,8 @@ html {
 }
 
 .title {
+  z-index: 1;
+  position: relative;
   font-size: var(--font-size-title);
   font-family: Oswald, sans-serif;
   font-weight: bold;
@@ -36,4 +38,7 @@ html {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: white;
+  padding: 5rem 3rem 3rem;
+  display: inline;
+  background-color: var(--honey-flower);
 }
