@@ -159,18 +159,27 @@ strong {
 
 .vader {
   display: grid;
-  grid-template: repeat(7, min-content) / .5fr min-content 2fr .5fr;
+  grid-template: repeat(7, min-content) / .3fr min-content 2fr .3fr;
+  grid-gap: 5rem;
   grid-template-areas:
-    '. vader-image vader-title .'
-    '. vader-image header-vader .'
-    '. vader-image header-p .'
+    '. vader-image vader-info .'
+    '. vader-image vader-info .'
+    '. vader-image vader-info .'
     '. article1 article2 .'
     '. article3 article3 .'
-    '. quote . .'
+    '. quote quote .'
     '. . polaroid1 .'
     '. . polaroid2 .'
     '. . polaroid3 .'
     'lick lick lick lick';
+}
+
+.vader-info {
+  grid-area: vader-info;
+  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .vader-image-block {
@@ -180,20 +189,8 @@ strong {
 
 .vader-image {
   border-bottom: 1rem solid var(--pink-lace);
-  max-width: 40vw;
+  max-width: 25vw;
   height: auto;
-}
-
-.vader-title {
-  grid-area: vader-title;
-}
-
-.header-vader {
-  grid-area: header-vader;
-}
-
-.header-p {
-  grid-area: header-p;
 }
 
 .godfather1 {
@@ -206,15 +203,41 @@ strong {
 
 .godfather3 {
   grid-area: article3;
+  width: 51vmax;
+}
+
+.godfather-beschuldiging {
+  margin-top: 5vmax;
 }
 
 .vader-quote {
   grid-area: quote;
+  align-self: center;
+  justify-self: center;
+  margin-right: 20vmax;
 }
 
 .raspberry-image, .sofia-godfather-part3-image, .bloem-image {
-  grid-row: 6 / 7;
+  grid-row: 5 / 7;
   grid-column: 3 / 4;
+  justify-self: flex-end;
+}
+
+.sofia-godfather-part3-image {
+  max-width: 35vw;
+  height: auto;
+}
+
+.bloem-image {
+  position: relative;
+  top: 20rem;
+  right: -2rem;
+}
+
+.raspberry-image {
+  position: relative;
+  top: 9rem;
+  right: 8rem;
 }
 
 .polaroid1-image {
