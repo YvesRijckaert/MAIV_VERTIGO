@@ -10,20 +10,28 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-size: var(--font-size-bodycopy);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
 .hide {
   display: none;
 }
 
+/* header */
+
 .header {
   border-top: 1rem solid var(--honey-flower);
-  border-bottom: 1rem solid var(--maya-blue);
+  border-bottom: 2rem solid var(--maya-blue);
   margin-top: 10rem;
   max-height: 40vw;
   background-image: url(../assets/img/pattern.jpg);
   background-color: var(--pink-lace);
   background-blend-mode: multiply;
   display: grid;
-  grid-template: 1fr 1fr .2fr/ 1fr 1fr;
+  grid-template: 1fr 1fr .4fr/ 1fr 1fr;
 }
 
 .title {
@@ -54,8 +62,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 2rem;
-  margin-top: 6vmax;
+  padding-bottom: .5vmax;
+  margin-top: 8vmax;
 }
 
 .header-sofia-image {
@@ -74,7 +82,30 @@ html {
   z-index: 1;
   grid-column: 2;
   grid-row: 1 / 3;
-  align-self: flex-start;
   max-width: 32vw;
   height: auto;
+}
+
+/* intro */
+
+.header-intro, .intro-highlight {
+  font-weight: bold;
+}
+
+.intro-text {
+  width: 50vmax;
+  background-color: var(--glitter);
+  padding: 5rem 3rem;
+  border-bottom: 1rem solid var(--maya-blue);
+  position: relative;
+  top: -5rem;
+}
+
+.intro-highlight {
+  color: var(--honey-flower);
+}
+
+.CTA-social {
+  text-transform: uppercase;
+  color: var(--maya-blue);
 }
