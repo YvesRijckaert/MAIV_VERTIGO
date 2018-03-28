@@ -119,7 +119,7 @@ p {
 
 .intro-text {
   grid-area: intro;
-  width: 50vmax;
+  width: 100%;
   background-color: var(--glitter);
   padding: 5rem 3rem;
   border-bottom: 1rem solid var(--maya-blue);
@@ -128,7 +128,6 @@ p {
 }
 
 .quote {
-  width: 40vmax;
   background-color: rgba(250, 205, 211, .33);
   padding: 5rem 3rem;
   border-left: 1rem solid var(--maya-blue);
@@ -187,16 +186,13 @@ p {
 
 .vader .container {
   display: grid;
+  grid-template-rows: min-content min-content 30rem 25rem min-content;
   grid-gap: 3rem;
   grid-template-areas:
-    'vader-image vader-info'
-    'vader-image vader-info'
     'vader-image vader-info'
     'article1 article2'
     'article3 article3'
     'quote quote'
-    'kritisch .'
-    'kritisch .'
     'kritisch .';
 }
 
@@ -204,12 +200,10 @@ p {
   grid-area: vader-info;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .vader-image-block {
   grid-area: vader-image;
-  align-self: flex-end;
 }
 
 .vader-image {
@@ -244,9 +238,11 @@ p {
 }
 
 .raspberry-image, .sofia-godfather-part3-image, .bloem-image {
-  grid-row: 5 / 7;
+  grid-row: 3;
   grid-column: 2 / 3;
   justify-self: flex-end;
+  position: relative;
+  top: 5rem;
 }
 
 .sofia-godfather-part3-image {
@@ -268,35 +264,43 @@ p {
 
 .polaroid1-image, .polaroid2-image, .polaroid3-image {
   grid-column: 2;
+  grid-row: 4;
   justify-self: flex-end;
+  max-width: 45vw;
+  height: auto;
 }
 
 .polaroid1-image {
-  grid-row: 6 / 10;
+  position: relative;
+  top: 1rem;
 }
 
 .polaroid2-image {
-  grid-row: 7 / 10;
+  position: relative;
+  top: 13rem;
 }
 
 .polaroid3-image {
-  grid-row: 9 / 10;
+  position: relative;
+  top: 27rem;
 }
 
 .lick-the-star-image, .marie-image {
   width: 100%;
   object-fit: cover;
   border-bottom: 2rem solid var(--maya-blue);
+  position: relative;
+  z-index: -1;
 }
 
 /* kritisch */
 
 .kritisch {
   position: relative;
-  bottom: -20rem;
+  bottom: -10rem;
   z-index: 2;
   grid-area: kritisch;
-  width: 30vmax;
+  min-width: 30rem;
   background-color: var(--glitter);
   padding: 5rem 3rem;
 }
