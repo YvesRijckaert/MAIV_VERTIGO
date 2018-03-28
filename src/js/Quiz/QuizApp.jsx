@@ -124,9 +124,6 @@ class QuizApp extends Component {
     const {resultaat} = this.state;
     return (
       <div>
-        <div>
-          <h2>Quiz Sofia Copolla</h2>
-        </div>
         {resultaat ? this.renderResult() : this.renderQuiz()}
       </div>
     );

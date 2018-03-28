@@ -432,6 +432,7 @@ h2, .japanese, .kritisch-title {
 .eye-quote {
   grid-area: quote;
   margin-left: 20rem;
+  width: 50%;
 }
 
 .video {
