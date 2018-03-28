@@ -159,7 +159,7 @@ strong {
 
 /* clan */
 
-.clan-title, .vader-title, .kritisch-title {
+.clan-title, .vader-title, .kritisch-title, .regi-title {
   font-size: var(--font-size-subtitle);
   color: var(--honey-flower);
 }
@@ -265,18 +265,54 @@ strong {
 }
 
 .lick-the-star-image {
-  grid-area: lick;
   width: 100%;
   object-fit: cover;
+  border-bottom: 2rem solid var(--maya-blue);
 }
 
 /* kritisch */
 
 .kritisch {
   position: relative;
+  bottom: -20rem;
   z-index: 2;
   grid-area: kritisch;
   width: 30vmax;
   background-color: var(--glitter);
   padding: 5rem 3rem;
+}
+
+/* regi */
+
+.regi .container {
+  margin-top: 3vmax;
+  display: grid;
+  grid-template: repeat(3, min-content) / 2fr 1fr;
+  grid-row-gap: 1rem;
+  grid-template-areas:
+    'title .'
+    'p1 image'
+    'p2 image';
+}
+
+.regi-title {
+  grid-area: title;
+}
+
+.regi-p:nth-child(n + 1) {
+  grid-area: p1;
+}
+
+.regi-p:nth-child(n + 3) {
+  grid-area: p2;
+}
+
+.sofia-window-image-container {
+  grid-area: image;
+  justify-self: flex-end;
+}
+
+.sofia-window-image {
+  width: 35vmin;
+  height: auto;
 }
