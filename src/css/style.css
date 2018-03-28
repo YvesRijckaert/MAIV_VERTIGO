@@ -159,7 +159,7 @@ strong {
 
 /* clan */
 
-.clan-title, .vader-title, .kritisch-title, .regi-title, .eye-title, .slavery-title, .permission-title, .tokio-title, .japanese {
+.clan-title, .vader-title, .kritisch-title, .regi-title, .eye-title, .slavery-title, .permission-title, .tokio-title, .japanese, .quiz-title, .hoogte-title, .lees-title {
   font-family: Oswald, sans-serif;
   font-size: var(--font-size-subtitle);
   color: var(--honey-flower);
@@ -448,4 +448,26 @@ strong {
 .japan-image-container {
   grid-area: image;
   justify-self: flex-end;
+}
+
+/* quiz */
+
+.quiz {
+  margin-top: 5rem;
+}
+
+.quizcontent {
+  margin-top: 3rem;
+  background-color: var(--glitter);
+}
+
+/* footer */
+
+.footer {
+  margin-top: 5rem;
+  background-color: var(--pink-lace);
+}
+
+.hoogte-title, .lees-title {
+  font-size: var(--font-size-smalltitle);
 }
