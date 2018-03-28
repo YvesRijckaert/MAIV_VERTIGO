@@ -159,7 +159,7 @@ strong {
 
 /* clan */
 
-.clan-title, .vader-title, .kritisch-title, .regi-title, .eye-title, .slavery-title, .permission-title, .tokio-title {
+.clan-title, .vader-title, .kritisch-title, .regi-title, .eye-title, .slavery-title, .permission-title, .tokio-title, .japanese {
   font-family: Oswald, sans-serif;
   font-size: var(--font-size-subtitle);
   color: var(--honey-flower);
@@ -367,7 +367,7 @@ strong {
   grid-area: content;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .permission-content2 {
@@ -380,6 +380,13 @@ strong {
   grid-area: image;
 }
 
+.bloem2-image {
+  position: relative;
+  top: 35rem;
+  left: 25rem;
+  transform: rotate(90deg);
+}
+
 .permission-quote {
   grid-area: quote;
   align-self: center;
@@ -388,4 +395,57 @@ strong {
 
 .polaroid4-image-container, .bloem3-image-container {
   grid-area: polaroid;
+  z-index: 2;
+}
+
+.bloem3-image {
+  position: relative;
+  top: 26rem;
+  left: 38rem;
+  z-index: 1;
+}
+
+/* tokio */
+
+.tokio {
+  margin-top: 5rem;
+}
+
+.tokio .container {
+  display: grid;
+  grid-template: repeat(5, min-content) / 1fr 1fr;
+  grid-column-gap: 3rem;
+  align-items: flex-end;
+  grid-template-areas:
+    'tokio .'
+    'title .'
+    'p1 .'
+    'p2 image'
+    'p3 image';
+}
+
+.japanese {
+  color: var(--maya-blue);
+  grid-area: tokio;
+}
+
+.tokio-title {
+  grid-area: title;
+}
+
+.tokio-p:nth-child(3) {
+  grid-area: p1;
+}
+
+.tokio-p:nth-child(4) {
+  grid-area: p2;
+}
+
+.tokio-p:nth-child(5) {
+  grid-area: p3;
+}
+
+.japan-image-container {
+  grid-area: image;
+  justify-self: flex-end;
 }
