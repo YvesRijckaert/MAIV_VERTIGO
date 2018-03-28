@@ -323,7 +323,77 @@ strong {
   border-bottom: 2rem solid var(--pink-lace);
 }
 
+/* eye */
+
+.eye {
+  margin-top: 5rem;
+}
+
+.eye .container {
+  display: grid;
+  grid-template: repeat(7, min-content) / 1fr 1fr;
+  grid-gap: 3rem;
+  grid-template-areas:
+    'image title'
+    'image content1'
+    'image content1'
+    'image content1'
+    'quote quote'
+    'video content2'
+    'video content2';
+  margin-bottom: 10rem;
+}
+
+.eye-title {
+  grid-area: title;
+}
+
+.eye-content1 {
+  grid-area: content1;
+}
+
+.eye-content2 {
+  grid-area: content2;
+}
+
+.sofia-bling-container, .louboutin-image-container, .louboutin2-image-container, .zonnebril-image-container {
+  grid-area: image;
+}
+
+.louboutin-image {
+  position: relative;
+  top: 66rem;
+  left: 35rem;
+}
+
+.louboutin2-image {
+  position: relative;
+  top: 3rem;
+  left: -5rem;
+}
+
+.zonnebril-image {
+  position: relative;
+  top: 50rem;
+  left: -4rem;
+}
+
+.eye-quote {
+  grid-area: quote;
+  margin-left: 20rem;
+}
+
+.video {
+  background-color: grey;
+  grid-area: video;
+  width: 100%;
+}
+
 /* slavery */
+
+.slavery {
+  margin-top: 5rem;
+}
 
 .slavery .container {
   display: grid;
@@ -468,6 +538,35 @@ strong {
   background-color: var(--pink-lace);
 }
 
+.footer .container {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  grid-template-areas:
+    'hoogte lees'
+    'end end';
+}
+
 .hoogte-title, .lees-title {
   font-size: var(--font-size-smalltitle);
+}
+
+.hoogte {
+  grid-area: hoogte;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.end {
+  grid-area: end;
+  border-top: .5rem solid var(--maya-blue);
+  display: flex;
+  justify-content: space-between;
+}
+
+.end-image, .end-p {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
