@@ -150,18 +150,20 @@ strong {
   color: var(--maya-blue);
 }
 
-.cite {
+.cite, .japanese {
   display: block;
   text-transform: uppercase;
-  color: var(--honey-flower);
+  color: var(--maya-blue);
   font-weight: bold;
 }
 
 /* clan */
 
-.clan-title, .vader-title, .kritisch-title, .regi-title {
+.clan-title, .vader-title, .kritisch-title, .regi-title, .eye-title, .slavery-title, .permission-title, .tokio-title {
+  font-family: Oswald, sans-serif;
   font-size: var(--font-size-subtitle);
   color: var(--honey-flower);
+  font-weight: bold;
 }
 
 /* vader */
@@ -264,7 +266,7 @@ strong {
   grid-row: 8 / 9;
 }
 
-.lick-the-star-image {
+.lick-the-star-image, .marie-image {
   width: 100%;
   object-fit: cover;
   border-bottom: 2rem solid var(--maya-blue);
@@ -315,4 +317,75 @@ strong {
 .sofia-window-image {
   width: 35vmin;
   height: auto;
+}
+
+.marie-image {
+  border-bottom: 2rem solid var(--pink-lace);
+}
+
+/* slavery */
+
+.slavery .container {
+  display: grid;
+  grid-template: 1fr 3fr / 1fr 1fr;
+  grid-gap: 3rem;
+  grid-template-areas:
+    'title .'
+    'p1 p2';
+}
+
+.slavery-p:nth-child(n + 1) {
+  grid-area: p1;
+}
+
+.slavery-p:nth-child(n + 3) {
+  grid-area: p2;
+}
+
+/* permission */
+
+.permission {
+  background-color: var(--glitter);
+}
+
+.oscar-image {
+  border-bottom: 1rem solid var(--pink-lace);
+}
+
+.permission .container {
+  padding-top: 5rem;
+  display: grid;
+  grid-row-gap: 3rem;
+  grid-template: 1fr .5fr 1fr / 1fr 1fr;
+  grid-template-areas:
+    'image content'
+    'content2 content2'
+    'polaroid quote';
+}
+
+.permission-content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.permission-content2 {
+  grid-area: content2;
+  width: 65%;
+  align-self: center;
+}
+
+.oscar-image-container, .bloem2-image-container {
+  grid-area: image;
+}
+
+.permission-quote {
+  grid-area: quote;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.polaroid4-image-container, .bloem3-image-container {
+  grid-area: polaroid;
 }
