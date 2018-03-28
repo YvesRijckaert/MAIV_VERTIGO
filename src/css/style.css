@@ -167,7 +167,7 @@ p {
   margin-top: 5rem;
 }
 
-.clan-title, .vader-title, .kritisch-title, .regi-title, .eye-title, .slavery-title, .permission-title, .tokio-title, .japanese, .quiz-title, .hoogte-title, .lees-title {
+h2, .japanese, .kritisch-title {
   font-family: Oswald, sans-serif;
   font-size: var(--font-size-subtitle);
   color: var(--honey-flower);
@@ -331,12 +331,7 @@ p {
   grid-area: p2;
 }
 
-.sofia-window-image-container {
-  grid-area: image;
-  justify-self: flex-end;
-}
-
-.bloem4-image-container {
+.sofia-window-image-container, .bloem4-image-container, .diamant-image-container, .diamant2-image-container, .diamant3-image-container {
   grid-area: image;
   justify-self: flex-end;
 }
@@ -351,6 +346,24 @@ p {
   position: relative;
   top: 30rem;
   right: 20rem;
+}
+
+.diamant-image {
+  position: relative;
+  top: -2rem;
+  right: 26rem;
+}
+
+.diamant2-image {
+  position: relative;
+  top: 38rem;
+  right: 55rem;
+}
+
+.diamant3-image {
+  position: relative;
+  top: 43rem;
+  right: 48rem;
 }
 
 .marie-image {
