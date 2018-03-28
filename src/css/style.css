@@ -30,6 +30,10 @@ strong {
   font-weight: bold;
 }
 
+p {
+  margin-bottom: 2rem;
+}
+
 /* header */
 
 .header {
@@ -148,6 +152,7 @@ strong {
 .CTA-social, .godfather-title {
   text-transform: uppercase;
   color: var(--maya-blue);
+  font-weight: bold;
 }
 
 .cite, .japanese {
@@ -159,6 +164,10 @@ strong {
 
 /* clan */
 
+.clan {
+  margin-top: 5rem;
+}
+
 .clan-title, .vader-title, .kritisch-title, .regi-title, .eye-title, .slavery-title, .permission-title, .tokio-title, .japanese, .quiz-title, .hoogte-title, .lees-title {
   font-family: Oswald, sans-serif;
   font-size: var(--font-size-subtitle);
@@ -166,7 +175,15 @@ strong {
   font-weight: bold;
 }
 
+.slider {
+  background-color: var(--glitter);
+}
+
 /* vader */
+
+.vader {
+  margin-top: 5rem;
+}
 
 .vader .container {
   display: grid;
@@ -185,7 +202,6 @@ strong {
 
 .vader-info {
   grid-area: vader-info;
-  align-content: space-between;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -212,18 +228,19 @@ strong {
 
 .godfather3 {
   grid-area: article3;
-  width: 51vmax;
+  width: 60%;
 }
 
 .godfather-beschuldiging {
-  margin-top: 5vmax;
+  padding-top: 5rem;
 }
 
 .vader-quote {
   grid-area: quote;
   align-self: center;
-  justify-self: center;
-  margin-right: 30vmax;
+  justify-self: left;
+  width: 40%;
+  margin-left: 10rem;
 }
 
 .raspberry-image, .sofia-godfather-part3-image, .bloem-image {
@@ -255,15 +272,15 @@ strong {
 }
 
 .polaroid1-image {
-  grid-row: 6 / 9;
+  grid-row: 6 / 10;
 }
 
 .polaroid2-image {
-  grid-row: 7 / 9;
+  grid-row: 7 / 10;
 }
 
 .polaroid3-image {
-  grid-row: 8 / 9;
+  grid-row: 9 / 10;
 }
 
 .lick-the-star-image, .marie-image {
@@ -331,8 +348,8 @@ strong {
 
 .eye .container {
   display: grid;
-  grid-template: repeat(7, min-content) / 1fr 1fr;
-  grid-gap: 3rem;
+  grid-template: repeat(7, min-content) / 2fr 1.5fr;
+  grid-gap: 5rem 3rem;
   grid-template-areas:
     'image title'
     'image content1'
@@ -358,6 +375,10 @@ strong {
 
 .sofia-bling-container, .louboutin-image-container, .louboutin2-image-container, .zonnebril-image-container {
   grid-area: image;
+}
+
+.sofia-bling-image {
+  border-bottom: 1rem solid var(--maya-blue);
 }
 
 .louboutin-image {
