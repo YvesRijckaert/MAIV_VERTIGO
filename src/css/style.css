@@ -53,10 +53,13 @@ strong {
   display: none;
 }
 
+<<<<<<< HEAD
 h3{
   font-size: 2.5rem;
 }
 
+=======
+>>>>>>> bba4fff43e324dc72e404beba832912c02f58f6b
 p {
   margin-bottom: 1.5rem;
 }
@@ -222,8 +225,21 @@ h2 {
   font-size: var(--font-size-subtitle);
 }
 
-.slider {
+.carousel {
+  display: flex;
   background-color: var(--glitter);
+  height: 50rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carousel-slide {
+  display: none;
+  text-align: center;
+}
+
+.carousel-slide-active {
+  display: block;
 }
 
 /* vader */
