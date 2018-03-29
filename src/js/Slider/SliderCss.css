@@ -2,18 +2,14 @@
   display: grid;
   grid-template: 1fr 1fr / 1fr 2fr 1fr;
   grid-template-areas:
-    'foto foto foto'
-    'links tekst rechts';
+    "foto foto foto"
+    "links tekst rechts";
 }
 
 .carousel-images {
   grid-area: foto;
   display: flex;
-  justify-content: center;
-}
-
-.carousel-slides {
-  grid-area: tekst;
+  justify-content: space-around;
 }
 
 .carousel-arrow-right {
@@ -22,4 +18,20 @@
 
 .carousel-arrow-left {
   grid-area: links;
+}
+
+.carousel-slide-person {
+  background-color: #543e76;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Oswald, sans-serif;
+  width: 25rem;
+}
+
+.carousel-slides .carousel-slide-active {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
