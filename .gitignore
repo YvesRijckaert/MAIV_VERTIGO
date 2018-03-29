@@ -7,3 +7,4 @@ src/js/.DS_Store
 .vscode
 yarn.lock
 yarn-error.log
+dist/
