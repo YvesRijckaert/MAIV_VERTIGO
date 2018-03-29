@@ -202,6 +202,7 @@ WebFontConfig = {
     <section class="regi">
       <div class="container">
         <h2 class="regi-title">Regiedebuut</h2>
+        <div class="regi-text">
         <p class="regi-p">“Lick the Star” was het debuut van Sofia als regisseur. Haar visuele stijlelementen reflecteren op een
           <strong>donkere dromerige wereld</strong>, een wereld bevolkt door jonge eenzame vrouwen en tienermeisjes. Diepe angsten
           spelen zich af in mooie, lange opnames afgewerkt met een meeslepende soundtrack.</p>
@@ -209,6 +210,7 @@ WebFontConfig = {
           verhaallijn van de kortfilm omvat een meidengroep op een middelbare school die jongens willen vergiftigen. Kate
           en Chloe, de twee hoofdrolspeelsters,
           <strong>tonen respectievelijk de vele van de bepalende kwaliteiten van de latere vrouwelijke personages</strong> van Coppola.</p>
+        </div>
         <picture class="sofia-window-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
           <source media="(min-width: 450px)" srcset="assets/img/sofia-window.webp" type="image/webp" />
@@ -429,10 +431,15 @@ WebFontConfig = {
       <section class="hoogte">
         <h2 class="hoogte-title">Blijf op de hoogte</h2>
         <p>Krijg weekelijks updates van Vertigo over alle nieuwtjes in de filmwereld.</p>
-        <form action="#">
-          <input type="email" name="email" required />
-          <input type="submit" value="ontvang nieuwsbrief">
-        </form>
+
+        <form class="nieuwsletter-submit-form" action="#">
+            <div class="input-nieuwsbrief">
+              <input type="hidden" name="action" value="done" />
+              <input class='newsletter-input' id="inputText" type='email' name='email' placeholder='E-mailadres' required />
+              <button class="button button--arrow" type="submit" value="done"><span>submit</span></button>
+            </div>
+          </form>
+
         <div class="hoogte-social">
           <a href="#">
             <img src="assets/img/icons/ico_twitter.svg" alt="Twitter icon" width="50" height="50" />

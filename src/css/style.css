@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-  max-width: 140rem;
+  max-width: 130rem;
   width: 90vw;
   margin: 0 auto;
 }
@@ -41,13 +41,18 @@ a {
   text-decoration: none;
 }
 
-.hide {
-  display: none;
+.vet {
+  font-weight: 700;
 }
 
 strong {
   font-weight: bold;
 }
+
+.hide {
+  display: none;
+}
+
 
 p {
   margin-bottom: 2rem;
@@ -345,21 +350,16 @@ h2, .japanese, .kritisch-title {
   grid-template: repeat(3, min-content) / 1fr 1fr;
   grid-row-gap: 1rem;
   grid-template-areas:
-    'title .'
-    'p1 image'
-    'p2 image';
+    'title image'
+    'p1 image';
 }
 
 .regi-title {
   grid-area: title;
 }
 
-.regi-p:nth-child(n + 1) {
+.regi-text{
   grid-area: p1;
-}
-
-.regi-p:nth-child(n + 3) {
-  grid-area: p2;
 }
 
 .sofia-window-image-container, .bloem4-image-container, .diamant-image-container, .diamant2-image-container, .diamant3-image-container {
@@ -525,7 +525,7 @@ h2, .japanese, .kritisch-title {
 
 .permission-content2 {
   grid-area: content2;
-  width: 65%;
+  max-width: 60%;
   align-self: center;
 }
 
@@ -642,6 +642,69 @@ h2, .japanese, .kritisch-title {
 
 .hoogte-title, .lees-title {
   font-size: var(--font-size-smalltitle);
+}
+
+/* OPMAAK nieuwsbrief form */
+
+.nieuwsletter-submit-form {
+  margin-top: 2rem;
+  width: 96%;
+}
+
+.input-nieuwsbrief {
+  position: relative;
+  margin-top: 2rem;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  border-radius: .5rem;
+  padding-left: 1%;
+  height: 4.8rem;
+  background-color: var(--glitter);
+
+  & input[type=email] {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: var(--darkblue);
+      -webkit-appearance: none; /* ios buttons fix */ /*stylelint-disable-line*/
+    appearance: none;
+    height: 100%;
+    width: 98%;
+    background-color: var(--glitter);
+    border: none;
+    padding-left: 1rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.button--arrow {
+  border: none;
+  color: transparent;
+  width: 3.7rem;
+  height: 3.7rem;
+  padding: .2rem;
+  appearance: none;
+  background: url(../assets/img/icons/Arrow-right.svg) no-repeat center;
+  background-size: 33%;
+  background-color: var(--maya-blue);
+  border-radius: .5rem;
+    -webkit-appearance: none; /* ios buttons fix */ /*stylelint-disable-line*/
+  will-change: trandform, opacity;
+  transition: all .3s ease;
+
+  &:focus {
+    outline: none;
+    opacity: .6;
+  }
+
+  &:hover {
+    background-size: 45%;
+    background-color: var(--darkblue);
+  }
 }
 
 .hoogte {
