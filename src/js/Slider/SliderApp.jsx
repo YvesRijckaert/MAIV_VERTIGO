@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slide from "./Slide.jsx";
 import CarouselLeftArrow from "./CarouselLeftArrow.jsx";
 import CarouselRightArrow from "./CarouselRightArrow.jsx";
+import CarouselSlideImage from "./CarouselSlideImage.jsx";
 
 class Carousel extends Component {
   constructor(props) {
@@ -60,7 +61,17 @@ class Carousel extends Component {
     return (
       <div className="carousel">
         <CarouselLeftArrow onClick={e => this.goToPrevSlide(e)} />
-        <ul className="carousel__slides">
+        <ul className="carousel-images">
+          {this.state.slides.map((slide, index) =>
+            <CarouselSlideImage
+            key={index}
+            index={index}
+            activeIndex={this.state.activeIndex}
+            img={slide.img}
+            alt={slide.person} />
+          )}
+        </ul>
+        <ul className="carousel-slides">
           {this.state.slides.map((slide, index) =>
             <Slide
               key={index}
