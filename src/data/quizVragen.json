@@ -9,10 +9,6 @@
       {
         "personage": "Personage2",
         "content": "Ipsum"
-      },
-      {
-        "personage": "Personage3",
-        "content": "Dolor"
       }
     ]
   },
@@ -26,10 +22,6 @@
       {
         "personage": "Personage2",
         "content": "Amet"
-      },
-      {
-        "personage": "Personage3",
-        "content": "Lorem"
       }
     ]
   },
@@ -43,10 +35,6 @@
       {
         "personage": "Personage2",
         "content": "Ipsum"
-      },
-      {
-        "personage": "Personage3",
-        "content": "Dolor"
       }
     ]
   },
@@ -60,10 +48,6 @@
       {
         "personage": "Personage2",
         "content": "Sid"
-      },
-      {
-        "personage": "Personage3",
-        "content": "Dolor"
       }
     ]
   },
@@ -77,10 +61,6 @@
       {
         "personage": "Personage2",
         "content": "Ipsum"
-      },
-      {
-        "personage": "Personage3",
-        "content": "Dolor"
       }
     ]
   }

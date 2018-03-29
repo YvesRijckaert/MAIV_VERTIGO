@@ -16,7 +16,6 @@ class QuizApp extends Component {
       answersCount: {
         Personage1: 0,
         Personage2: 0,
-        Personage3: 0
       },
       resultaat: ``
     };
