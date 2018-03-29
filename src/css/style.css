@@ -581,6 +581,7 @@ h2, .japanese, .kritisch-title {
 .quizcontent {
   margin-top: 3rem;
   background-color: var(--glitter);
+  height: 40rem;
 }
 
 .content-react {
