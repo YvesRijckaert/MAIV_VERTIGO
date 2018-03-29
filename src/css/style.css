@@ -336,6 +336,7 @@ h2 {
   justify-self: flex-end;
   max-width: 45vw;
   height: auto;
+  opacity: 1;
 }
 
 .polaroid1-image {
@@ -770,13 +771,11 @@ h2 {
 
   from {
     transform: translate3d(0, 100%, 0);
-    opacity: 0;
     visibility: visible;
   }
 
   to {
     transform: translate3d(0, 0, 0);
-    opacity: 1;
   }
 }
 
@@ -799,7 +798,7 @@ h2 {
 }
 
 .rotate {
-  animation: rotate 8s;
+  animation: rotate 8s infinite;
 }
 
 @keyframes rotate2 {
