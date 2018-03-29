@@ -17,11 +17,11 @@ class CarouselSlideImage extends Component {
       default:
         className = `carousel-slide`;
     }
-    if (activeIndex === 0 && index == 8) {
+    if (activeIndex === 0 && index === 8) {
       className = `carousel-slide carousel-slide-semi-active`
     }
 
-    if (activeIndex === 8 && index == 0) {
+    if (activeIndex === 8 && index === 0) {
       className = `carousel-slide carousel-slide-semi-active`
     }
     return className;

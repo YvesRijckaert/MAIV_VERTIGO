@@ -2,8 +2,8 @@
   display: grid;
   grid-template: 1fr 1fr / 1fr 2fr 1fr;
   grid-template-areas:
-    "foto foto foto"
-    "links tekst rechts";
+    'foto foto foto'
+    'links tekst rechts';
 }
 
 .carousel-images {
@@ -14,10 +14,31 @@
 
 .carousel-arrow-right {
   grid-area: rechts;
+  justify-self: flex-end;
+  background: url(../../assets/img/scrubber-right.svg) no-repeat center;
 }
 
 .carousel-arrow-left {
   grid-area: links;
+  background: url(../../assets/img/scrubber-left.svg) no-repeat center;
+}
+
+.carousel-arrow {
+  align-self: center;
+  background-color: #facdd3;
+  border: none;
+  width: 14rem;
+  height: 16rem;
+  appearance: none;
+  background-size: 33%;
+  border-radius: none;
+  will-change: trandform, opacity;
+  transition: all .3s ease;
+
+  &:hover {
+    background-size: 45%;
+    cursor: pointer;
+  }
 }
 
 .carousel-slide-person {
