@@ -1,29 +1,77 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
+import Slide from "./Slide.jsx";
+import CarouselLeftArrow from "./CarouselLeftArrow.jsx";
+import CarouselRightArrow from "./CarouselRightArrow.jsx";
+import "./Carousel.css";
 
 class Carousel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      teller: 0,
-      vraagId: 1,
-      vraag: ``,
-      antwoordOpties: [],
-      antwoord: ``,
-      answersCount: {
-        Personage1: 0,
-        Personage2: 0,
-        Personage3: 0
-      },
-      resultaat: ``
+      activeIndex: 0,
+      slides: [],
     };
+  }
+
+  componentDidMount = () => {
+    fetch(`./data/carousel.json`)
+      .then(responseObject => responseObject.json())
+      .then(this.parseJSON);
+  };
+
+  parseJSON = data => {
+    this.setState({ slides: data });
+  };
+
+  goToSlide = index => {
+    this.setState({
+      activeIndex: index
+    });
+  }
+
+  goToPrevSlide = e => {
+    e.preventDefault();
+    const { activeIndex, slides } = this.state;
+    let index = activeIndex;
+    let slidesLength = slides.length;
+    if (index < 1) {
+      index = slidesLength;
+    }
+    --index;
+    this.setState({
+      activeIndex: index
+    });
+  }
+
+  goToNextSlide = e => {
+    e.preventDefault();
+    const { activeIndex, slides } = this.state;
+    let index = activeIndex;
+    let slidesLength = slides.length - 1;
+    if (index === slidesLength) {
+      index = -1;
+    }
+    ++index;
+    this.setState({
+      activeIndex: index
+    });
   }
 
   render() {
     return (
-      <div className="carousel-container">
-        <button className="carousel-nav carousel-left-nav"></button>
-        <div className="carousel-viewport"></div>
-        <button className="carousel-nav carousel-right-nav"></button>
+      <div className="carousel">
+        <CarouselLeftArrow onClick={e => this.goToPrevSlide(e)} />
+        <ul className="carousel__slides">
+          {this.state.slides.map((slide, index) =>
+            <Slide
+              key={index}
+              index={index}
+              activeIndex={this.state.activeIndex}
+              slide={slide}
+            />
+          )}
+        </ul>
+        <CarouselRightArrow onClick={e => this.goToNextSlide(e)} />
       </div>
     );
   }

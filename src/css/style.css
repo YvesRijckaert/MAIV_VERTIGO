@@ -53,7 +53,6 @@ strong {
   display: none;
 }
 
-
 p {
   margin-bottom: 2rem;
 }
@@ -210,13 +209,21 @@ h2, .japanese, .kritisch-title {
   font-weight: bold;
 }
 
-.slider {
+.carousel {
+  display: flex;
   background-color: var(--glitter);
+  height: 50rem;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.carousel-container {
-  height: 50rem;
-  background-color: var(--glitter);
+.carousel-slide {
+  display: none;
+  text-align: center;
+}
+
+.carousel-slide-active {
+  display: block;
 }
 
 /* vader */
