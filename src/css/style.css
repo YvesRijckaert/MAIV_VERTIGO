@@ -763,3 +763,22 @@ h2 {
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
+
+/* animations */
+
+@keyframes slideInUp {
+
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation: slideInUp 2s;
+}
