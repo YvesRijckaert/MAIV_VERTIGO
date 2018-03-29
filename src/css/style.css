@@ -783,3 +783,39 @@ h2 {
 .slideInUp {
   animation: slideInUp 2s;
 }
+
+@keyframes rotate {
+
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+
+}
+
+.rotate {
+  animation: rotate 8s;
+}
+
+@keyframes rotate2 {
+
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+
+}
+
+.rotate2 {
+  animation: rotate2 5s;
+}
