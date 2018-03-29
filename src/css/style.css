@@ -237,8 +237,12 @@ h2 {
   text-align: center;
 }
 
-.carousel-slide-active {
+.carousel-slide-active, .carousel-slide-semi-active {
   display: block;
+}
+
+.carousel-slide-semi-active {
+  opacity: .5;
 }
 
 /* vader */
