@@ -220,11 +220,8 @@ h2 {
 }
 
 .carousel {
-  display: flex;
   background-color: var(--glitter);
   height: 50rem;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .carousel-slide {

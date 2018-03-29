@@ -1,0 +1,25 @@
+.carousel {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 2fr 1fr;
+  grid-template-areas:
+    'foto foto foto'
+    'links tekst rechts';
+}
+
+.carousel-images {
+  grid-area: foto;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-slides {
+  grid-area: tekst;
+}
+
+.carousel-arrow-right {
+  grid-area: rechts;
+}
+
+.carousel-arrow-left {
+  grid-area: links;
+}
