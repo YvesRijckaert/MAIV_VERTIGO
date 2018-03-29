@@ -13,7 +13,7 @@ const Quiz = ({
   onAntwoordSelected
 }) => {
   return (
-    <div key={vraagId}>
+    <div className="content-react" key={vraagId}>
       <VraagTeller teller={vraagId} totaal={vraagTotaal} />
       <Vraag vraag={vraag} />
       <ul>{antwoordOpties.map(antwoordObject => (<AntwoordOptie
