@@ -111,11 +111,6 @@ p {
   margin-top: 9vmax;
 }
 
-/*.header-sofia-image-picture {
-  height: auto;
-  object-fit: cover;
-}*/
-
 .header-sofia-image {
   margin-bottom: -.4rem;
   grid-column: 1;
@@ -202,7 +197,7 @@ p {
   font-weight: 700;
 }
 
-cite{
+cite {
   margin-top: 2rem;
 }
 
@@ -247,7 +242,6 @@ h2 {
   margin-top: 10rem;
 }
 
-
 .vader-title {
   line-height: 120%;
 }
@@ -269,8 +263,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-self: end;
- justify-self: end;
- margin-bottom: 5rem;
+  justify-self: end;
+  margin-bottom: 5rem;
 }
 
 .vader-image-block {
@@ -398,7 +392,7 @@ h2 {
   grid-area: p1;
 }
 
-.regi{
+.regi {
   margin-bottom: 16rem;
 }
 
@@ -478,10 +472,6 @@ h2 {
 .sofia-bling-container, .louboutin-image-container, .louboutin2-image-container, .zonnebril-image-container {
   grid-area: image;
 }
-
-/*.sofia-bling-container, sofia-bling-image{
-background-color: red;
-}*/
 
 .sofia-bling-image {
   width: 80%;
@@ -670,14 +660,14 @@ background-color: red;
   padding-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
   grid-column-gap: 15%;
-  grid-row-gap: 3rem;
   grid-template-areas:
     'hoogte lees'
     'end end';
 }
 
-.lees{
+.lees {
   grid-area: lees;
   max-width: 90%;
   justify-self: end;
@@ -756,7 +746,7 @@ background-color: red;
   justify-content: space-between;
 }
 
-.hoogte-social{
+.hoogte-social {
   margin-top: 3rem;
 }
 
@@ -765,6 +755,7 @@ background-color: red;
   border-top: .5rem solid var(--maya-blue);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .end-image, .end-p {
