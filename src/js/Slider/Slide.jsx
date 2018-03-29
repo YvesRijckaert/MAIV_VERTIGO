@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CarouselSlideImage from "./CarouselSlideImage.jsx";
 
 const Slide = ({ index, activeIndex, slide }) => {
   return (
@@ -11,7 +10,6 @@ const Slide = ({ index, activeIndex, slide }) => {
           : "carousel-slide"
       }
     >
-      <CarouselSlideImage img={slide.img} alt={slide.person} />
       <h3 className="carousel-slide-person">{slide.person}</h3>
       <p className="carousel-slide-bodycoyp">{slide.bodycopy}</p>
     </li>
