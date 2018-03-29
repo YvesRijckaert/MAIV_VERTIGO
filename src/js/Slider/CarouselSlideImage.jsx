@@ -4,10 +4,13 @@ class CarouselSlideImage extends Component {
   checkClassName = () => {
     const { index, activeIndex } = this.props;
     let className;
+<<<<<<< HEAD
     /* switch */
     /* als de index gelijk is aan active index dan moet opacity 1 zijn */
     /* als de index 1tje kleiner of 1tje groter is dan active index dan moet opacity .5 zijn */
     /* default: display: none */
+=======
+>>>>>>> d7612fe4a54bb1e98c605e477c2dbfad1b32cf98
     switch (index) {
       case activeIndex:
         className = `carousel-slide carousel-slide-active`;
@@ -21,9 +24,12 @@ class CarouselSlideImage extends Component {
       default:
         className = `carousel-slide`;
     }
+<<<<<<< HEAD
     // index === activeIndex
     //   ? (className = "carousel-slide carousel-slide-active")
     //   : (className = "carousel-slide");
+=======
+>>>>>>> d7612fe4a54bb1e98c605e477c2dbfad1b32cf98
     return className;
   };
 
