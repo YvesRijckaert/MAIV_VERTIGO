@@ -58,7 +58,7 @@ h3 {
 }
 
 p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 /* header */
@@ -68,6 +68,7 @@ p {
   border-bottom: 2rem solid var(--maya-blue);
   margin-top: 10rem;
   background-image: url(../assets/img/pattern.jpg);
+  background-repeat: repeat;
   background-color: var(--pink-lace);
   background-blend-mode: multiply;
 }
@@ -450,7 +451,7 @@ h2 {
 .eye .container {
   display: grid;
   grid-template: repeat(7, min-content) / 1fr 1fr;
-  grid-gap: 8rem 3rem;
+  grid-gap: 6rem 3rem;
   grid-template-areas:
     'image title'
     'image content1'
@@ -607,7 +608,8 @@ background-color: red;
 /* tokio */
 
 .tokio {
-  margin-top: 5rem;
+  margin-top: 8rem;
+  margin-bottom: 10rem;
 }
 
 .tokio .container {
@@ -616,11 +618,11 @@ background-color: red;
   grid-column-gap: 3rem;
   align-items: flex-end;
   grid-template-areas:
-    'tokio .'
-    'title title'
-    'p1 .'
-    'p2 image'
-    'p3 image';
+    'article .'
+    'article .'
+    'article .'
+    'article image'
+    'article image';
 }
 
 .japanese {
@@ -628,20 +630,8 @@ background-color: red;
   grid-area: tokio;
 }
 
-.tokio-title {
-  grid-area: title;
-}
-
-.tokio-p:nth-child(3) {
-  grid-area: p1;
-}
-
-.tokio-p:nth-child(4) {
-  grid-area: p2;
-}
-
-.tokio-p:nth-child(5) {
-  grid-area: p3;
+.tokio-article {
+  grid-area: article;
 }
 
 .japan-image-container {
@@ -681,7 +671,7 @@ background-color: red;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 15%;
-  grid-row-gap: 4rem;
+  grid-row-gap: 3rem;
   grid-template-areas:
     'hoogte lees'
     'end end';
@@ -701,13 +691,11 @@ background-color: red;
 /* OPMAAK nieuwsbrief form */
 
 .nieuwsletter-submit-form {
-  margin-top: 2rem;
-  width: 96%;
+  width: 100%;
 }
 
 .input-nieuwsbrief {
   position: relative;
-  margin-top: 2rem;
   padding: .5rem;
   display: flex;
   align-items: center;
@@ -766,6 +754,10 @@ background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.hoogte-social{
+  margin-top: 3rem;
 }
 
 .end {
