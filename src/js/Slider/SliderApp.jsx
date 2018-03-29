@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Slide from "./Slide.jsx";
 import CarouselLeftArrow from "./CarouselLeftArrow.jsx";
 import CarouselRightArrow from "./CarouselRightArrow.jsx";
-import "./Carousel.css";
 
 class Carousel extends Component {
   constructor(props) {
