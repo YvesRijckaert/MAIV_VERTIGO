@@ -266,6 +266,9 @@ h2 {
   grid-area: vader-info;
   display: flex;
   flex-direction: column;
+  align-self: end;
+ justify-self: end;
+ margin-bottom: 5rem;
 }
 
 .vader-image-block {
@@ -711,7 +714,7 @@ background-color: red;
   padding: .5rem;
   display: flex;
   align-items: center;
-  border-radius: .5rem;
+  border-radius: none;
   padding-left: 1%;
   height: 4.8rem;
   background-color: var(--glitter);
@@ -745,7 +748,7 @@ background-color: red;
   background: url(../assets/img/icons/Arrow-right.svg) no-repeat center;
   background-size: 33%;
   background-color: var(--maya-blue);
-  border-radius: .5rem;
+  border-radius: none;
     -webkit-appearance: none; /* ios buttons fix */ /*stylelint-disable-line*/
   will-change: trandform, opacity;
   transition: all .3s ease;
