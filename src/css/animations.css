@@ -64,3 +64,22 @@
   }
 
 }
+
+.louboutin-image, .louboutin2-image {
+  animation: bounce 5s ease-out infinite;
+}
+
+@keyframes bounce {
+
+  0% {
+    transform: translateY(1rem);
+  }
+
+  50% {
+    transform: translateY(2rem);
+  }
+
+  100% {
+    transform: translateY(1rem);
+  }
+}
