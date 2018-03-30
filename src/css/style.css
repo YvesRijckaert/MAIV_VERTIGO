@@ -50,6 +50,10 @@ strong {
   font-weight: 700;
 }
 
+button:focus{
+    outline: none;
+}
+
 .hide {
   display: none;
 }
@@ -61,7 +65,6 @@ h3 {
 p {
   margin-bottom: 1.8rem;
 }
-
 .opacity {
   animation: opacity 5s;
 }
@@ -80,46 +83,47 @@ p {
 
 .header .container {
   display: grid;
-  grid-template: 1fr 1fr .4fr/ 1fr 1fr;
+  grid-template: 1fr 1fr .4fr .5fr/ 1fr 1fr;
   max-height: 40vw;
 }
 
-.title {
-  z-index: 3;
+.title-container {
   position: relative;
+  grid-row: 3;
+  grid-column: 1 / 3;
+  z-index: 899;
+  background-color: var(--honey-flower);
+  height: 14vw;
+  width: 100%;
+}
+
+.title {
   font-size: var(--font-size-title);
   font-family: Oswald, sans-serif;
   font-weight: 700;
   color: var(--pink-lace);
-  grid-row: 2;
-  grid-column: 1 / 3;
-  justify-self: center;
+  position: absolute;
+  top: -8vw;
+  left: 2rem;
+  text-shadow: 1px 1px 13px rgba(150, 150, 150, 0.3);
 }
 
 .subtitle {
   z-index: 2;
-  position: relative;
-  font-size: var(--font-size-subtitle);
+  font-size: 4.1vw;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   color: white;
-  background-color: var(--honey-flower);
-  grid-row: 2;
-  grid-column: 1 / 3;
   justify-self: center;
-  width: 60vmax;
-  height: 10vmax;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: .5vmax;
-  margin-top: 9vmax;
+  position: absolute;
+  bottom: .8vw;
+  left: 2rem;
 }
 
 .header-sofia-image {
   margin-bottom: -.4rem;
   grid-column: 1;
-  grid-row: 1 / 4;
+  grid-row: 1 / 5;
   position: relative;
   z-index: 0;
   align-self: flex-end;
@@ -141,6 +145,9 @@ p {
 .autograph-gif {
   position: absolute;
   display: inline-block;
+  right: 15vw;
+  top: 8vw;
+  z-index: 990;
 }
 
 /* intro */
@@ -228,7 +235,7 @@ h2 {
 
 .carousel {
   background-color: var(--glitter);
-  height: 52rem;
+  height: 54rem;
 }
 
 .carousel-slide {
@@ -895,9 +902,14 @@ h2 {
 
 @media only screen and (max-width: 1100px) {
 
-  .container {
-    background-color: red;
-    width: 92vw;
+  .carousel-slide-image {
+    width: 84%;
+  }
+
+  .autograph-gif {
+    display: inline-block;
+    right: 7vw;
+    top: 8vw;
   }
 
   .intro .container {
@@ -1020,12 +1032,53 @@ h2 {
     grid-column-gap: 7%;
   }
 
+  .polaroid3-image, .polaroid3-image img, .polaroid2-image, .polaroid2-image img, .polaroid1-image, .polaroid1-image img {
+    width: 38vw;
+    height: auto;
+  }
+
+  .title-container {
+    height: 16vw;
+    width: 100%;
+  }
+  
+  .title {
+    font-size: 10vw;
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    color: var(--pink-lace);
+    position: absolute;
+    top: -9vw;
+    left: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 6vw;
+    bottom: .1vw;
+    left: 2rem;
+  }
+
 }
 
 @media only screen and (max-width: 860px) {
 
-  .container {
-    background-color: lime;
+  .autograph-gif {
+    display: inline-block;
+    right: 7vw;
+    top: 14vw;
+  }
+
+  .header-sofia-image {
+    display: none;
+  }
+
+  .header-family-image {
+    grid-column: 1/3;
+    grid-row: 1 / 3;
+    max-width: 60vw;
+    height: auto;
+
+    justify-self: center;
   }
 
   .intro .container {
@@ -1152,14 +1205,35 @@ h2 {
     max-width: 75%;
   }
 
+  .header .container {
+    max-height: 60vw;
+  }
+
 }
 
 @media only screen and (max-width: 720px) {
 
-  .container {
-    background-color: lightblue;
+  .title-container {
+    height: 20vw;
+    width: 100%;
   }
-
+  
+  .title {
+    font-size: 14vw;
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    color: var(--pink-lace);
+    position: absolute;
+    top: -13vw;
+    left: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 6vw;
+    bottom: .1vw;
+    left: 2rem;
+  }
+  
   .carousel {
     height: 58rem;
   }
@@ -1372,12 +1446,17 @@ h2 {
     height: auto;
   }
 
+  .carousel{
+    height: 65rem;
+  }
+
 }
 
 @media only screen and (max-width: 550px) {
 
-  .container {
-    background-color: pink;
+  .carousel-arrow {
+    width: 4rem;
+    height: 4rem;
   }
 
   .end {
