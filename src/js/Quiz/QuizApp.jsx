@@ -14,8 +14,8 @@ class QuizApp extends Component {
       antwoordOpties: [],
       antwoord: ``,
       answersCount: {
-        Personage1: 0,
-        Personage2: 0,
+        "Lux Lisbon": 0,
+        "Nicki Moore": 0
       },
       resultaat: ``
     };

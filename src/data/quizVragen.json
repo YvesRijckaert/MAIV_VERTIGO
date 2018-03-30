@@ -1,14 +1,27 @@
 [
   {
-    "vraag": "Hoe zou jij jezelf beschrijven?",
+    "vraag": "Hoe zou jij jezelf omschrijven?",
     "antwoorden": [
       {
-        "personage": "Lux Lisbon - The Virgin Suicides",
-        "content": "Mooi, avontuurlijk en een echte rebel."
+        "personage": "Lux Lisbon",
+        "content": "Avontuurlijk en opstandig"
       },
       {
-        "personage": "Nicki Moore - The Bling Ring",
-        "content": "Roem zoeker, geobsedeerd met jezelf, narcistisch"
+        "personage": "Nicki Moore",
+        "content": "Narcistisch en oppervlakkig"
+      }
+    ]
+  },
+  {
+    "vraag": "Wat waardeer jij in vriendschappen?",
+    "antwoorden": [
+      {
+        "personage": "Lux Lisbon",
+        "content": "Een diepe emotionele band"
+      },
+      {
+        "personage": "Nicki Moore",
+        "content": "Uitgaan en plezier hebben samen"
       }
     ]
   },
@@ -16,39 +29,39 @@
     "vraag": "Wat zijn jouw toekomstplannen?",
     "antwoorden": [
       {
-        "personage": "Lux Lisbon - The Virgin Suicides",
-        "content": "Verhuizen, onafhankelijk worden"
+        "personage": "Lux Lisbon",
+        "content": "Verhuizen, zelfstandig worden"
       },
       {
-        "personage": "Nicki Moore - The Bling Ring",
+        "personage": "Nicki Moore",
         "content": "Model of actrice worden"
       }
     ]
   },
   {
-    "vraag": "Wat zoek jij in vriendschap?",
+    "vraag": "Spendeer je graag tijd met je familie?",
     "antwoorden": [
       {
-        "personage": "Lux Lisbon - The Virgin Suicides",
-        "content": "Je aan elkaar binden door diepe conversaties"
+        "personage": "Lux Lisbon",
+        "content": "Ik kom helemaal niet goed overeen met mijn familie"
       },
       {
-        "personage": "Nicki Moore - The Bling Ring",
-        "content": "Uitgaan samen en plezier hebben"
+        "personage": "Nicki Moore",
+        "content": "We gaan soms samen uit, ik feest graag met mijn zus"
       }
     ]
   },
   {
-    "vraag": "Spendeer je graag tijd met jouw familie?",
+    "vraag": "Ben je een introvert of extravert?",
     "antwoorden": [
       {
-        "personage": "Lux Lisbon - The Virgin Suicides",
-        "content": "Helemaal niet, hoe sneller ik alleen ben hoe beter"
+        "personage": "Lux Lisbon",
+        "content": "Introvert"
       },
       {
-        "personage": "Nicki Moore - The Bling Ring",
-        "content": "We doen soms dingen samen"
+        "personage": "Nicki Moore",
+        "content": "Extravert"
       }
     ]
-  },
+  }
 ]
