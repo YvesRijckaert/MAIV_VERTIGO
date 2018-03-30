@@ -1386,7 +1386,7 @@ h2 {
 
   .vader .container {
     display: grid;
-    grid-template: 35vw auto min-content min-content 60vw 80vw 25rem min-content / 1fr 1fr;
+    grid-template: 35vw auto min-content min-content 60vw 80vw auto min-content min-content/ 1fr 1fr;
     grid-gap: 3rem;
     grid-template-areas:
       'vader-image vader-image'
