@@ -714,6 +714,18 @@ h2 {
 
 /* quiz */
 
+input[type='radio'] {
+  transform: scale(1.5);
+  margin: 1rem 3rem;
+}
+
+.question-vraag {
+  font-size: 2.5rem;
+  color: var(--honey-flower);
+  font-weight: bold;
+  font-family: Oswald, sans-serif;
+}
+
 .startscreen {
   display: flex;
   flex-direction: column;
