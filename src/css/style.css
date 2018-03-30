@@ -714,11 +714,19 @@ h2 {
 
 /* quiz */
 
+.startscreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .quiz {
   margin-top: 5rem;
 }
 
-.quizcontent {
+.quiz .container {
   margin-top: 3rem;
   background-color: var(--glitter);
   height: 40rem;
