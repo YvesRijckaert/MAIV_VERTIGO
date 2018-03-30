@@ -31,6 +31,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
 }
+.hoogte-social a:hover, .social a:hover {
+  opacity: .6;
+}
 
 .container {
   max-width: 120rem;
