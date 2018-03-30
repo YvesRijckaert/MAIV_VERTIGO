@@ -767,6 +767,8 @@ h2 {
 }
 
 .content-react {
+  position: relative;
+  bottom: 9rem;
   height: 40rem;
   display: flex;
   flex-direction: column;
@@ -796,6 +798,10 @@ h2 {
   position: absolute;
   bottom: -5rem;
   left: 1rem;
+}
+
+.result {
+  text-align: center;
 }
 
 /* footer */
