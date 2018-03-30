@@ -61,6 +61,10 @@ p {
   margin-bottom: 1.8rem;
 }
 
+.opacity {
+  animation: opacity 5s;
+}
+
 /* header */
 
 .header {
@@ -1232,6 +1236,9 @@ h2 {
   }
   .lees {
     max-width: 100%;
+  }
+
+}
 /* animations */
 
 @keyframes slideInUp {
@@ -1303,6 +1310,4 @@ h2 {
   .container {
     background-color: pink;
   }
-.opacity {
-  animation: opacity 5s;
 }
