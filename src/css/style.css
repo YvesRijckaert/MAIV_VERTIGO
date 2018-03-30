@@ -719,6 +719,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 60%;
 }
 
 .startscreen-btn {
@@ -737,6 +738,11 @@ h2 {
     background-color: var(--honey-flower);
     color: var(--maya-blue);
   }
+}
+
+.startscreen-info {
+  width: 35rem;
+  text-align: center;
 }
 
 .quiz {

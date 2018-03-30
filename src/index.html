@@ -10,17 +10,19 @@
 </head>
 
 <script>
+  WebFontConfig = {
+    google: {
+      families: ['Oswald: 400, 700', 'Open Sans: 400, 800']
+    }
+  };
 
-WebFontConfig = {
-  google: { families: ['Oswald: 400, 700', 'Open Sans: 400, 800'] }
-};
-
-   (function(d) {
-      var wf = d.createElement('script'), s = d.scripts[0];
-      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-      wf.async = true;
-      s.parentNode.insertBefore(wf, s);
-   })(document);
+  (function (d) {
+    var wf = d.createElement('script'),
+      s = d.scripts[0];
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+    wf.async = true;
+    s.parentNode.insertBefore(wf, s);
+  })(document);
 
 </script>
 
@@ -30,7 +32,7 @@ WebFontConfig = {
       <h1 class="title">Sofia Coppola</h1>
       <p class="subtitle">Losbreken van nepotisme</p>
 
-    <img class="autograph-gif" src="assets/img/gif-autograph-sofia.gif" width="400" height="160" alt="autograph" />
+      <img class="autograph-gif" src="assets/img/gif-autograph-sofia.gif" width="400" height="160" alt="autograph" />
 
       <picture class="header-family-image">
         <source media="(max-width: 579px)" srcset="./assets/img/header-family.png" />
@@ -149,7 +151,7 @@ WebFontConfig = {
           </blockquote>
         </article>
         <picture class="vader-image-block">
-            <source media="(max-width: 449px)" srcset="assets/img/vader.jpg" />
+          <source media="(max-width: 449px)" srcset="assets/img/vader.jpg" />
           <source media="(min-width: 450px)" srcset="assets/img/vader.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/vader.jpg" />
           <img class="vader-image" height="494" width="480" alt="Sofia Coppola en haar vader" />
@@ -161,13 +163,13 @@ WebFontConfig = {
           <img class="sofia-godfather-part3-image" height="451" width="302" alt="Sofia Coppola in The Godfather III" />
         </picture>
         <picture class="raspberry-image">
-            <source media="(max-width: 449px)" srcset="assets/img/raspberry.png" />
+          <source media="(max-width: 449px)" srcset="assets/img/raspberry.png" />
           <source media="(min-width: 450px)" srcset="assets/img/raspberry.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/raspberry.png" />
           <img class="raspberry-image" height="206" width="174" alt="Golden Raspberry" />
         </picture>
         <picture class="bloem-image">
-            <source media="(max-width: 449px)" srcset="assets/img/bloem.png" />
+          <source media="(max-width: 449px)" srcset="assets/img/bloem.png" />
           <source media="(min-width: 450px)" srcset="assets/img/bloem.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/bloem.png" />
           <img class="bloem-image" height="154" width="205" alt="Bloem" />
@@ -201,16 +203,17 @@ WebFontConfig = {
     <section class="regi">
       <div class="container">
         <article class="regi-article">
-        <h2 class="regi-title">Regiedebuut</h2>
-        <div class="regi-text">
-        <p class="regi-p">“Lick the Star” was het debuut van Sofia als regisseur. Haar visuele stijlelementen reflecteren op een
-          <strong>donkere dromerige wereld</strong>, een wereld bevolkt door jonge eenzame vrouwen en tienermeisjes. Diepe angsten
-          spelen zich af in mooie, lange opnames afgewerkt met een meeslepende soundtrack.</p>
-        <p class="regi-p">De film is uitgebracht in 1998, een jaar voor haar eerste langspeelfilm “The Virgin Suicides” werd uitgebracht. De
-          verhaallijn van de kortfilm omvat een meidengroep op een middelbare school die jongens willen vergiftigen. Kate
-          en Chloe, de twee hoofdrolspeelsters,
-          <strong>tonen respectievelijk de vele van de bepalende kwaliteiten van de latere vrouwelijke personages</strong> van Coppola.</p>
-        </div>
+          <h2 class="regi-title">Regiedebuut</h2>
+          <div class="regi-text">
+            <p class="regi-p">“Lick the Star” was het debuut van Sofia als regisseur. Haar visuele stijlelementen reflecteren op een
+              <strong>donkere dromerige wereld</strong>, een wereld bevolkt door jonge eenzame vrouwen en tienermeisjes. Diepe angsten
+              spelen zich af in mooie, lange opnames afgewerkt met een meeslepende soundtrack.</p>
+            <p class="regi-p">De film is uitgebracht in 1998, een jaar voor haar eerste langspeelfilm “The Virgin Suicides” werd uitgebracht.
+              De verhaallijn van de kortfilm omvat een meidengroep op een middelbare school die jongens willen vergiftigen.
+              Kate en Chloe, de twee hoofdrolspeelsters,
+              <strong>tonen respectievelijk de vele van de bepalende kwaliteiten van de latere vrouwelijke personages</strong> van
+              Coppola.</p>
+          </div>
         </article>
         <picture class="sofia-window-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/sofia-window.jpg" />
@@ -230,7 +233,7 @@ WebFontConfig = {
           <source media="(min-width: 450px)" srcset="assets/img/diamant.png" />
           <img class="diamant-image revealOnScroll" data-animation="rotate2" height="50" width="50" alt="Diamant" />
         </picture>
-        <picture class="diamant2-image-container" >
+        <picture class="diamant2-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/diamant.png" />
           <source media="(min-width: 450px)" srcset="assets/img/diamant.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/diamant.png" />
@@ -247,18 +250,18 @@ WebFontConfig = {
     <section class="eye">
       <div class="container">
         <article class="eye-article">
-        <h2 class="eye-title">Under the public eye</h2>
-        <div class="eye-content1">
-          <p class="eye-p">Sofia Coppola is opgegroeid onder “the public eye”, en in 2013 maakte ze een
-            <strong>film over een reeks grote diefstallen die heel Hollywood geshockeerd hebben</strong>. Nochtans interesseert het
-            leven van de high society en filmsterren in Hollywood haar in het minst niet, en maakt ze er ook geen deel van
-            uit. Maar deze waargebeurde verhaallijn is iets dat al een tijdje in haar hoofd speelde,
-            <strong>mede door de aanraking en interesse in haar tienerjaren met de ‘fashion-obsessed culture’ van Los Angeles</strong>.</p>
-          <p class="eye-p">Paris Hilton was een van de slachtoffers van de inbraken en Coppola kreeg toelating om in haar huis en in haar
-            dressings te filmen, waar de echte inbraken plaats vonden.</p>
-          <p class="eye-p">Toen de eerste opnames waren, was de hele cast en crew verbijsterd van haar huis en vooral de schoencollectie.
-            Het was iets waanzinnigs.</p>
-        </div>
+          <h2 class="eye-title">Under the public eye</h2>
+          <div class="eye-content1">
+            <p class="eye-p">Sofia Coppola is opgegroeid onder “the public eye”, en in 2013 maakte ze een
+              <strong>film over een reeks grote diefstallen die heel Hollywood geshockeerd hebben</strong>. Nochtans interesseert
+              het leven van de high society en filmsterren in Hollywood haar in het minst niet, en maakt ze er ook geen deel
+              van uit. Maar deze waargebeurde verhaallijn is iets dat al een tijdje in haar hoofd speelde,
+              <strong>mede door de aanraking en interesse in haar tienerjaren met de ‘fashion-obsessed culture’ van Los Angeles</strong>.</p>
+            <p class="eye-p">Paris Hilton was een van de slachtoffers van de inbraken en Coppola kreeg toelating om in haar huis en in haar
+              dressings te filmen, waar de echte inbraken plaats vonden.</p>
+            <p class="eye-p">Toen de eerste opnames waren, was de hele cast en crew verbijsterd van haar huis en vooral de schoencollectie.
+              Het was iets waanzinnigs.</p>
+          </div>
         </article>
         <div class="eye-content2">
           <p class="eye-p">Ook wederom betrok Sofia haar vader bij haar project. Bij “The Bling Ring” was haar vader een van de producers.</p>
@@ -377,19 +380,20 @@ WebFontConfig = {
           <h2 class="tokio-title">The spirit of place: Tokio</h2>
           <p class="japanese">ソフィアコッポラ</p>
           <p class="tokio-p">
-            <strong>Sofia wilde ook altijd al een film maken in Tokio. Het is een stad die haar al van kinds af aan fascineerde. Ze
-              is er ook al verschillende keren geweest, aangezien ze enkele jaren geleden in Tokio actief was in de fotografie
+            <strong>Sofia wilde ook altijd al een film maken in Tokio. Het is een stad die haar al van kinds af aan fascineerde.
+              Ze is er ook al verschillende keren geweest, aangezien ze enkele jaren geleden in Tokio actief was in de fotografie
               en modewereld. Ook voor ze er aan de slag ging bracht ze al veel tijd door in Tokio</strong>.</p>
           <p class="tokio-p">Pluspunt was dat ze de omgeving en setting dus goed kende. Ze wilde ook 's nachts met neon werken. Uiteraard kent
-            Tokio voor dat onderwerp geen gelijke. Ze wou ook een romantisch liefdesverhaal brengen, gefilmd in het Park Hyatt
-            hotel. Ze verbleef er tijdens de promotour van haar regiedebuut “Virgin Suicides”. Het is een van haar favoriete
-            plaatsen in de wereld en werkt voor haar heel inspirerend.</p>
+            Tokio voor dat onderwerp geen gelijke. Ze wou ook een romantisch liefdesverhaal brengen, gefilmd in het Park
+            Hyatt hotel. Ze verbleef er tijdens de promotour van haar regiedebuut “Virgin Suicides”. Het is een van haar
+            favoriete plaatsen in de wereld en werkt voor haar heel inspirerend.</p>
           <p class="tokio-p">De film is opgenomen met een lichtgewichtcamera, om heel mobiel te zijn in de miljoenenstad. En de mensen merkten
             er bijna niks van dat er een succesvolle film opgenomen werd.
-            <strong>Haar vader wou het idee uit haar hoofd praten, want je hebt dan uiteraard beperkingen naar licht en klank toe als
-              je een kleinere mobielere camera gebruikt</strong>. Francis Coppola was toen ook heel hard gefocust op HD-films.
-            Toch bleef ze bij haar idee een niet opdringerige filmervaring naar Tokio brengen, zonder de grote filmmiddelen
-            in te zetten. Scarlet Johansen werd gevraagd voor de hoofdrol. De opnames waren klaar op zevenentwintig dagen tijd.
+            <strong>Haar vader wou het idee uit haar hoofd praten, want je hebt dan uiteraard beperkingen naar licht en klank toe
+              als je een kleinere mobielere camera gebruikt</strong>. Francis Coppola was toen ook heel hard gefocust op
+            HD-films. Toch bleef ze bij haar idee een niet opdringerige filmervaring naar Tokio brengen, zonder de grote
+            filmmiddelen in te zetten. Scarlet Johansen werd gevraagd voor de hoofdrol. De opnames waren klaar op zevenentwintig
+            dagen tijd.
           </p>
         </article>
         <picture class="japan-image-container">
@@ -404,8 +408,8 @@ WebFontConfig = {
       <div class="container">
         <h2 class="quiz-title">Welk filmpersonage ben jij?</h2>
         <div class="startscreen">
+          <p class="startscreen-info">Ontdek het filmpersonage uit de films van Sofia Coppola dat het meeste bij jou past!</p>
           <img class="autograph-gif" src="assets/img/gif-autograph-sofia.gif" width="400" height="160" alt="autograph" />
-          <p>Ontdek het filmpersonage uit de films van Sofia Coppola dat het meeste bij jou past!</p>
           <button class="startscreen-btn">Doe de test!</button>
         </div>
         <div class="quizcontent hide" id="reactcontent"></div>
@@ -443,12 +447,14 @@ WebFontConfig = {
         <p>Krijg weekelijks updates van Vertigo over alle nieuwtjes in de filmwereld.</p>
 
         <form class="nieuwsletter-submit-form" action="#">
-            <div class="input-nieuwsbrief">
-              <input type="hidden" name="action" value="done" />
-              <input class='newsletter-input' id="inputText" type='email' name='email' placeholder='E-mailadres' required />
-              <button class="button button--arrow" type="submit" value="done"><span>submit</span></button>
-            </div>
-          </form>
+          <div class="input-nieuwsbrief">
+            <input type="hidden" name="action" value="done" />
+            <input class='newsletter-input' id="inputText" type='email' name='email' placeholder='E-mailadres' required />
+            <button class="button button--arrow" type="submit" value="done">
+              <span>submit</span>
+            </button>
+          </div>
+        </form>
 
         <div class="hoogte-social">
           <a href="#">
