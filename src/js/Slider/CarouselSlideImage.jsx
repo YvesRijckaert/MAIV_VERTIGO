@@ -4,6 +4,7 @@ class CarouselSlideImage extends Component {
   checkClassName = () => {
     const { index, activeIndex } = this.props;
     let className;
+    let order;
     switch (index) {
       case activeIndex:
         className = `carousel-slide carousel-slide-active`;
@@ -18,19 +19,35 @@ class CarouselSlideImage extends Component {
         className = `carousel-slide`;
     }
     if (activeIndex === 0 && index === 8) {
-      className = `carousel-slide carousel-slide-semi-active`
+      className = `carousel-slide carousel-slide-semi-active`;
+      /*zet ook de flex order van het element met index 8 op 3*/
+      order = 3;
+    }
+
+    if (activeIndex === 0 && index === 0) {
+      /*zet ook de flex order van het element met index 0 op 2*/
+      order = 2;
     }
 
     if (activeIndex === 8 && index === 0) {
-      className = `carousel-slide carousel-slide-semi-active`
+      className = `carousel-slide carousel-slide-semi-active`;
+      /*zet ook de flex order van het element met index 0 op 3*/
+      order = 3;
     }
-    return className;
+    if (activeIndex === 8 && index === 8) {
+      /*zet ook de flex order van het element met index 8 op 2*/
+      order = 2;
+    }
+    return [className, order];
   };
 
   render() {
     const { img, alt } = this.props;
     return (
-      <li className={this.checkClassName()}>
+      <li
+        className={this.checkClassName()[0]}
+        style={{ order: this.checkClassName()[1] }}
+      >
         <picture className="carousel-slide-image">
           <source
             media="(min-width: 450px)"

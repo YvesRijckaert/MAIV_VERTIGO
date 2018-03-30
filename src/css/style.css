@@ -818,3 +818,19 @@ h2 {
 .rotate2 {
   animation: rotate2 5s;
 }
+
+@keyframes opacity {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+.opacity {
+  animation: opacity 5s;
+}
