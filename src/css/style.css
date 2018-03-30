@@ -724,12 +724,40 @@ h2 {
   height: 40rem;
 }
 
+.quiz .container {
+  position: relative;
+}
+
 .content-react {
   height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.bloem5-image {
+  position: absolute;
+  top: 3.5rem;
+  left: -4rem;
+}
+
+.louboutin4-image-container {
+  position: absolute;
+  bottom: 21rem;
+  right: -3rem;
+}
+
+.louboutin3-image-container {
+  position: absolute;
+  bottom: 31rem;
+  right: 8rem;
+}
+
+.zonnebril2-image-container {
+  position: absolute;
+  bottom: -5rem;
+  left: 1rem;
 }
 
 /* footer */
