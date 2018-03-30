@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const CarouselLeftArrow = ({ onClick }) => {
   return (
     <button
-      className="carousel-arrow"
+      className="carousel-arrow carousel-arrow-left"
       onClick={onClick}
     />
   );

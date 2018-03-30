@@ -4,11 +4,7 @@ class CarouselSlideImage extends Component {
   checkClassName = () => {
     const { index, activeIndex } = this.props;
     let className;
-    /* switch */
-    /* als de index gelijk is aan active index dan moet opacity 1 zijn */
-    /* als de index 1tje kleiner of 1tje groter is dan active index dan moet opacity .5 zijn */
-    /* default: display: none */
-
+    let order;
     switch (index) {
       case activeIndex:
         className = `carousel-slide carousel-slide-active`;
@@ -22,16 +18,41 @@ class CarouselSlideImage extends Component {
       default:
         className = `carousel-slide`;
     }
-    // index === activeIndex
-    //   ? (className = "carousel-slide carousel-slide-active")
-    //   : (className = "carousel-slide");
-    return className;
+    if (activeIndex === 0 && index === 8) {
+      className = `carousel-slide carousel-slide-semi-active`;
+      /*zet ook de flex order van het element met index 8 op 3*/
+      order = 1;
+    }
+
+    if (activeIndex === 0 && index === 0) {
+      /*zet ook de flex order van het element met index 0 op 2*/
+      order = 2;
+    }
+
+    if (activeIndex === 0 && index === 1) {
+      /*zet ook de flex order van het element met index 0 op 2*/
+      order = 3;
+    }
+
+    if (activeIndex === 8 && index === 0) {
+      className = `carousel-slide carousel-slide-semi-active`;
+      /*zet ook de flex order van het element met index 0 op 3*/
+      order = 3;
+    }
+    if (activeIndex === 8 && index === 8) {
+      /*zet ook de flex order van het element met index 8 op 2*/
+      order = 2;
+    }
+    return [className, order];
   };
 
   render() {
     const { img, alt } = this.props;
     return (
-      <li className={this.checkClassName()}>
+      <li
+        className={this.checkClassName()[0]}
+        style={{ order: this.checkClassName()[1] }}
+      >
         <picture className="carousel-slide-image">
           <source
             media="(min-width: 450px)"

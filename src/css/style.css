@@ -222,11 +222,8 @@ h2 {
 }
 
 .carousel {
-  display: flex;
   background-color: var(--glitter);
-  height: 50rem;
-  justify-content: space-around;
-  align-items: center;
+  height: 52rem;
 }
 
 .carousel-slide {
@@ -342,6 +339,7 @@ h2 {
   justify-self: flex-end;
   max-width: 45vw;
   height: auto;
+  opacity: 1;
 }
 
 .polaroid1-image {
@@ -1234,6 +1232,68 @@ h2 {
   }
   .lees {
     max-width: 100%;
+/* animations */
+
+@keyframes slideInUp {
+
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation: slideInUp 2s;
+}
+
+@keyframes rotate {
+
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+
+}
+
+.rotate {
+  animation: rotate 8s infinite;
+}
+
+@keyframes rotate2 {
+
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+
+}
+
+.rotate2 {
+  animation: rotate2 5s;
+}
+
+@keyframes opacity {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 
 }
@@ -1243,4 +1303,6 @@ h2 {
   .container {
     background-color: pink;
   }
+.opacity {
+  animation: opacity 5s;
 }
