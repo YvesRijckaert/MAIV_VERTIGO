@@ -3,7 +3,6 @@ import Slide from "./Slide.jsx";
 import CarouselLeftArrow from "./CarouselLeftArrow.jsx";
 import CarouselRightArrow from "./CarouselRightArrow.jsx";
 import CarouselSlideImage from "./CarouselSlideImage.jsx";
-import "./SliderCss.css";
 
 class Carousel extends Component {
   constructor(props) {
