@@ -1,66 +1,66 @@
 [
   {
-    "vraag": "Dit is vraag 1?",
+    "vraag": "Hoe zou jij jezelf omschrijven?",
     "antwoorden": [
       {
-        "personage": "Personage1",
-        "content": "Lorem"
+        "personage": "Lux Lisbon",
+        "content": "Avontuurlijk en opstandig"
       },
       {
-        "personage": "Personage2",
-        "content": "Ipsum"
+        "personage": "Nicki Moore",
+        "content": "Narcistisch en oppervlakkig"
       }
     ]
   },
   {
-    "vraag": "Dit is vraag 2?",
+    "vraag": "Wat waardeer jij in vriendschappen?",
     "antwoorden": [
       {
-        "personage": "Personage1",
-        "content": "Sid"
+        "personage": "Lux Lisbon",
+        "content": "Een diepe emotionele band"
       },
       {
-        "personage": "Personage2",
-        "content": "Amet"
+        "personage": "Nicki Moore",
+        "content": "Uitgaan en plezier hebben samen"
       }
     ]
   },
   {
-    "vraag": "Dit is vraag 3?",
+    "vraag": "Wat zijn jouw toekomstplannen?",
     "antwoorden": [
       {
-        "personage": "Personage1",
-        "content": "Lorem"
+        "personage": "Lux Lisbon",
+        "content": "Verhuizen, zelfstandig worden"
       },
       {
-        "personage": "Personage2",
-        "content": "Ipsum"
+        "personage": "Nicki Moore",
+        "content": "Model of actrice worden"
       }
     ]
   },
   {
-    "vraag": "Dit is vraag 4?",
+    "vraag": "Spendeer je graag tijd met je familie?",
     "antwoorden": [
       {
-        "personage": "Personage1",
-        "content": "Amet"
+        "personage": "Lux Lisbon",
+        "content": "Ik kom helemaal niet goed overeen met mijn familie"
       },
       {
-        "personage": "Personage2",
-        "content": "Sid"
+        "personage": "Nicki Moore",
+        "content": "We gaan soms samen uit, ik feest graag met mijn zus"
       }
     ]
   },
   {
-    "vraag": "Dit is vraag 5?",
+    "vraag": "Ben je een introvert of extravert?",
     "antwoorden": [
       {
-        "personage": "Personage1",
-        "content": "Lorem"
+        "personage": "Lux Lisbon",
+        "content": "Introvert"
       },
       {
-        "personage": "Personage2",
-        "content": "Ipsum"
+        "personage": "Nicki Moore",
+        "content": "Extravert"
       }
     ]
   }

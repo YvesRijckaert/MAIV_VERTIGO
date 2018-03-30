@@ -408,7 +408,7 @@ h2 {
   justify-self: flex-end;
   max-width: 45vw;
   height: auto;
-  opacity: 1;
+  opacity: 0;
 }
 
 .polaroid1-image {
@@ -1321,11 +1321,13 @@ h2 {
       'hoogte hoogte'
       'end end';
   }
+
   .lees {
     max-width: 100%;
   }
 
 }
+<<<<<<< HEAD
 
 @media only screen and (max-width: 550px) {
 
@@ -1425,6 +1427,8 @@ h2 {
   .carousel-images {
     justify-content: space-between;
   }
+=======
+>>>>>>> 806f12ae802f9f0493a8324a9374489023134aab
 
   .carousel-slide-image {
     width: 60%;
