@@ -7,7 +7,7 @@ html {
   box-sizing: border-box;
   height: 100%;
 }
-*, *:before, *:after { /* stylelint-disable-line */
+*, *::before, *::after { /* stylelint-disable-line */
   box-sizing: inherit;
 }
 
@@ -153,10 +153,11 @@ p {
     '. quote .';
 }
 
-.header-intro, .intro-highlight, .header-vader {
+.header-intro,
+.intro-highlight,
+.header-vader {
   font-weight: 700;
 }
-
 
 .intro-text {
   grid-area: intro;
@@ -191,13 +192,15 @@ p {
   align-self: start;
 }
 
-.CTA-social, .godfather-title {
+.CTA-social,
+.godfather-title {
   text-transform: uppercase;
   color: var(--maya-blue);
   font-weight: 700;
 }
 
-.cite, .japanese {
+.cite,
+.japanese {
   display: block;
   text-transform: uppercase;
   color: var(--maya-blue);
@@ -214,7 +217,9 @@ cite {
   margin-top: 5rem;
 }
 
-h2, .japanese, .kritisch-title {
+h2,
+.japanese,
+.kritisch-title {
   font-family: Oswald, sans-serif;
   font-size: var(--font-size-smalltitle);
   color: var(--honey-flower);
@@ -226,17 +231,13 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.carousel {
-  background-color: var(--glitter);
-  height: 52rem;
-}
-
 .carousel-slide {
   display: none;
   text-align: center;
 }
 
-.carousel-slide-active, .carousel-slide-semi-active {
+.carousel-slide-active,
+.carousel-slide-semi-active {
   display: block;
 }
 
@@ -250,12 +251,15 @@ h2 {
   grid-template-areas:
     'foto foto foto'
     'links tekst rechts';
+  background-color: var(--glitter);
+  height: 52rem;
 }
 
 .carousel-images {
   grid-area: foto;
   display: flex;
   justify-content: space-around;
+  align-self: center;
 }
 
 .carousel-arrow-right {
@@ -376,7 +380,9 @@ h2 {
   margin-left: 10rem;
 }
 
-.raspberry-image, .sofia-godfather-part3-image, .bloem-image {
+.raspberry-image,
+.sofia-godfather-part3-image,
+.bloem-image {
   grid-row: 3;
   grid-column: 2 / 3;
   justify-self: flex-end;
@@ -402,7 +408,9 @@ h2 {
   right: 8rem;
 }
 
-.polaroid1-image, .polaroid2-image, .polaroid3-image {
+.polaroid1-image,
+.polaroid2-image,
+.polaroid3-image {
   grid-column: 2;
   grid-row: 4;
   justify-self: flex-end;
@@ -426,7 +434,8 @@ h2 {
   top: 55rem;
 }
 
-.lick-the-star-image, .marie-image {
+.lick-the-star-image,
+.marie-image {
   width: 100%;
   object-fit: cover;
   border-bottom: 2rem solid var(--maya-blue);
@@ -471,7 +480,11 @@ h2 {
   margin-bottom: 16rem;
 }
 
-.sofia-window-image-container, .bloem4-image-container, .diamant-image-container, .diamant2-image-container, .diamant3-image-container {
+.sofia-window-image-container,
+.bloem4-image-container,
+.diamant-image-container,
+.diamant2-image-container,
+.diamant3-image-container {
   grid-area: image;
   justify-self: flex-end;
 }
@@ -544,7 +557,10 @@ h2 {
   grid-area: content2;
 }
 
-.sofia-bling-container, .louboutin-image-container, .louboutin2-image-container, .zonnebril-image-container {
+.sofia-bling-container,
+.louboutin-image-container,
+.louboutin2-image-container,
+.zonnebril-image-container {
   grid-area: image;
 }
 
@@ -602,7 +618,7 @@ h2 {
     'p1 p2';
 }
 
-.slavery-title{
+.slavery-title {
   grid-area: title;
 }
 
@@ -647,7 +663,8 @@ h2 {
   align-self: center;
 }
 
-.oscar-image-container, .bloem2-image-container {
+.oscar-image-container,
+.bloem2-image-container {
   grid-area: image;
 }
 
@@ -664,7 +681,10 @@ h2 {
   justify-self: flex-end;
 }
 
-.polaroid4-image-container, .polaroid4-image-container img, .bloem3-image-container, .bloem3-image-container img{
+.polaroid4-image-container,
+.polaroid4-image-container img,
+.bloem3-image-container,
+.bloem3-image-container img {
   grid-area: polaroid;
   z-index: 2;
   max-width: 40vw;
@@ -840,7 +860,8 @@ input[type='radio'] {
   justify-self: end;
 }
 
-.hoogte-title, .lees-title {
+.hoogte-title,
+.lees-title {
   font-size: var(--font-size-smalltitle);
   margin-bottom: 4rem;
 }
@@ -861,12 +882,11 @@ input[type='radio'] {
   height: 4.8rem;
   background-color: var(--glitter);
 
-  & input[type=email] {
+  & input[type='email'] {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.9rem;
     font-weight: 400;
     color: var(--darkblue);
-      -webkit-appearance: none; /* ios buttons fix */ /*stylelint-disable-line*/
     appearance: none;
     height: 100%;
     width: 98%;
@@ -891,7 +911,6 @@ input[type='radio'] {
   background-size: 33%;
   background-color: var(--maya-blue);
   border-radius: none;
-    -webkit-appearance: none; /* ios buttons fix */ /*stylelint-disable-line*/
   will-change: trandform, opacity;
   transition: all .3s ease;
 
@@ -925,7 +944,8 @@ input[type='radio'] {
   align-items: center;
 }
 
-.end-image, .end-p {
+.end-image,
+.end-p {
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
@@ -935,7 +955,7 @@ input[type='radio'] {
   height: auto;
 }
 
-.carousel-arrow carousel-arrow-left{
+.carousel-arrow .carousel-arrow-left {
   width: 2vw;
 }
 
@@ -975,7 +995,9 @@ input[type='radio'] {
     width: 50%;
   }
 
-  .polaroid1-image, .polaroid2-image, .polaroid3-image {
+  .polaroid1-image,
+  .polaroid2-image,
+  .polaroid3-image {
     max-width: 42vw;
   }
 
@@ -1032,7 +1054,8 @@ input[type='radio'] {
       'polaroid quote';
   }
 
-  .oscar-image-container, .bloem2-image-container {
+  .oscar-image-container,
+  .bloem2-image-container {
     grid-area: image;
     width: 80%;
   }
@@ -1067,7 +1090,6 @@ input[type='radio'] {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 7%;
   }
-
 }
 
 @media only screen and (max-width: 860px) {
@@ -1139,7 +1161,8 @@ input[type='radio'] {
     top: 43vw;
   }
 
-  .lick-the-star-image, .lick-the-star-container {
+  .lick-the-star-image,
+  .lick-the-star-container {
     margin-top: -20rem;
   }
 
@@ -1159,7 +1182,8 @@ input[type='radio'] {
     margin-bottom: 10rem;
   }
 
-  .sofia-bling-container img, .sofia-bling-container source {
+  .sofia-bling-container img,
+  .sofia-bling-container source {
     width: 100%;
     height: 60vw;
     object-fit: cover;
@@ -1171,7 +1195,8 @@ input[type='radio'] {
     overflow: hidden;
   }
 
-  .marie-image-container img, .marie-image-container source {
+  .marie-image-container img,
+  .marie-image-container source {
     width: 100%;
     height: 50vw;
     object-fit: cover;
@@ -1199,7 +1224,6 @@ input[type='radio'] {
   .tokio-article {
     max-width: 75%;
   }
-
 }
 
 @media only screen and (max-width: 720px) {
@@ -1208,7 +1232,7 @@ input[type='radio'] {
     background-color: lightblue;
   }
 
-  .carousel {
+  .carousel  {
     height: 58rem;
   }
 
@@ -1233,7 +1257,8 @@ input[type='radio'] {
   .bloem4-image {
     width: 30vw;
     height: auto;
-    right: 10rem;
+    right: 0;
+    top: 24rem;
   }
 
   .diamant3-image {
@@ -1272,7 +1297,9 @@ input[type='radio'] {
       'kritisch kritisch';
   }
 
-  .raspberry-image, .sofia-godfather-part3-image, .bloem-image {
+  .raspberry-image,
+  .sofia-godfather-part3-image,
+  .bloem-image {
     grid-row: 4;
     grid-column: 1;
     justify-self: flex-end;
@@ -1324,16 +1351,19 @@ input[type='radio'] {
     max-width: 100%;
   }
 
-  .polaroid1-image, .polaroid2-image, .polaroid3-image {
+  .polaroid1-image,
+  .polaroid2-image,
+  .polaroid3-image {
     grid-column: 2;
     grid-row: 4;
-  justify-self: start;
+    justify-self: start;
     max-width: 10vw;
     height: auto;
     width: 20%;
   }
 
-  .lick-the-star-container, .lick-the-star-container img {
+  .lick-the-star-container,
+  .lick-the-star-container img {
     height: 40rem;
   }
 
@@ -1355,7 +1385,10 @@ input[type='radio'] {
       'quote quote';
   }
 
-  .polaroid4-image-container, .polaroid4-image-container img, .bloem3-image-container, .bloem3-image-container img {
+  .polaroid4-image-container,
+  .polaroid4-image-container img,
+  .bloem3-image-container,
+  .bloem3-image-container img {
     max-width: 88%;
     height: auto;
     align-self: center;
@@ -1384,7 +1417,9 @@ input[type='radio'] {
       'p1 p1';
   }
 
-  .sofia-window-image_container img, .sofia-window-image-container source, .sofia-window-image {
+  .sofia-window-image_container img,
+  .sofia-window-image-container source,
+  .sofia-window-image {
     width: 100%;
     height: 50vw;
     object-fit: cover;
@@ -1394,11 +1429,6 @@ input[type='radio'] {
     width: 100%;
     object-fit: cover;
     overflow: hidden;
-  }
-
-  .bloem4-image {
-    right: 0;
-    top: 24rem;
   }
 
   .diamant-image {
@@ -1411,15 +1441,20 @@ input[type='radio'] {
       'hoogte hoogte'
       'end end';
   }
+
   .lees {
     max-width: 100%;
   }
 
-  .polaroid3-image, .polaroid3-image img, .polaroid2-image, .polaroid2-image img, .polaroid1-image, .polaroid1-image img {
+  .polaroid3-image,
+  .polaroid3-image img,
+  .polaroid2-image,
+  .polaroid2-image img,
+  .polaroid1-image,
+  .polaroid1-image img {
     width: 38vw;
     height: auto;
   }
-
 }
 
 @media only screen and (max-width: 550px) {
@@ -1456,10 +1491,6 @@ input[type='radio'] {
       'kritisch kritisch';
   }
 
-  .polaroid1-image, .polaroid2-image, .polaroid3-image {
-    grid-row: 5;
-  }
-
   .intro .container {
     display: grid;
     grid-template: 2fr auto auto / 1fr 1fr;
@@ -1473,9 +1504,10 @@ input[type='radio'] {
     max-width: 40vw;
   }
 
-  .bloem4-image{
+  .bloem4-image {
     display: none;
   }
+
   .zonnebril-image {
     display: none;
   }
@@ -1484,15 +1516,19 @@ input[type='radio'] {
     display: none;
   }
 
-  .eye .container{
+  .eye .container {
     grid-gap: 6rem 3rem;
   }
 
-  .louboutin3-image, .louboutin4-image, .zonnebril2-image, .bloem5-image {
+  .louboutin3-image,
+  .louboutin4-image,
+  .zonnebril2-image,
+  .bloem5-image {
     display: none;
   }
 
-  .end-image, .end-p {
+  .end-image,
+  .end-p {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
@@ -1504,6 +1540,7 @@ input[type='radio'] {
 
   .carousel-images {
     justify-content: space-between;
+    align-self: center;
   }
 
   .carousel-slide-image {
@@ -1514,7 +1551,10 @@ input[type='radio'] {
     display: none;
   }
 
-  .polaroid4-image-container, .polaroid4-image-container img, .bloem3-image-container, .bloem3-image-container img {
+  .polaroid4-image-container,
+  .polaroid4-image-container img,
+  .bloem3-image-container,
+  .bloem3-image-container img {
     max-width: 95%;
   }
 
@@ -1538,29 +1578,34 @@ input[type='radio'] {
       'article article';
   }
 
-  .polaroid3-image, .polaroid3-image img, .polaroid2-image, .polaroid2-image img, .polaroid1-image, .polaroid1-image img {
+  .polaroid3-image img,
+  .polaroid2-image img,
+  .polaroid1-image img {
     width: 80vw;
     height: auto;
   }
 
-  .polaroid1-image, .polaroid2-image, .polaroid3-image {
+  .polaroid1-image,
+  .polaroid2-image,
+  .polaroid3-image {
+    grid-column: 1;
     grid-row: 6;
+    width: 80vw;
+    height: auto;
   }
 
-  .raspberry-image, .sofia-godfather-part3-image, .bloem-image {
+  .raspberry-image,
+  .sofia-godfather-part3-image,
+  .bloem-image {
     grid-column: 1/3;
     justify-self: center;
     grid-row: 5;
   }
-
-  .polaroid1-image, .polaroid2-image, .polaroid3-image {
-    grid-column: 1;
-    grid-row: 6;
-  }
 }
 
 @media only screen and (max-width: 420px) {
-  .container{
+
+  .container {
     background-color: yellow;
   }
 }
