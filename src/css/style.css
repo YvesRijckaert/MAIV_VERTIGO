@@ -773,7 +773,7 @@ input[type='radio'] {
 .startscreen-btn {
   z-index: 1;
   margin-top: 7rem;
-  font-size: var(--font-smalltitle);
+  font-size: var(--font-size-bodycopy);
   color: var(--honey-flower);
   background-color: var(--maya-blue);
   border: none;
@@ -894,7 +894,6 @@ input[type='radio'] {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.9rem;
     font-weight: 400;
-    color: var(--darkblue);
     appearance: none;
     height: 100%;
     width: 98%;
@@ -929,7 +928,6 @@ input[type='radio'] {
 
   &:hover {
     background-size: 45%;
-    background-color: var(--darkblue);
   }
 }
 
