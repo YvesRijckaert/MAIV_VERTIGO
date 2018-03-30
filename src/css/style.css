@@ -238,14 +238,11 @@ h2 {
   margin-bottom: 2rem;
 }
 
-<<<<<<< HEAD
 .carousel {
   background-color: var(--glitter);
   height: 54rem;
 }
 
-=======
->>>>>>> 94dcc6fcf706d24745bf5c714d857110890e548c
 .carousel-slide {
   display: none;
   text-align: center;
@@ -1110,7 +1107,6 @@ input[type='radio'] {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 7%;
   }
-<<<<<<< HEAD
 
   .polaroid3-image, .polaroid3-image img, .polaroid2-image, .polaroid2-image img, .polaroid1-image, .polaroid1-image img {
     width: 38vw;
@@ -1138,8 +1134,6 @@ input[type='radio'] {
     left: 2rem;
   }
 
-=======
->>>>>>> 94dcc6fcf706d24745bf5c714d857110890e548c
 }
 
 @media only screen and (max-width: 860px) {
@@ -1289,14 +1283,11 @@ input[type='radio'] {
   .tokio-article {
     max-width: 75%;
   }
-<<<<<<< HEAD
 
   .header .container {
     max-height: 60vw;
   }
 
-=======
->>>>>>> 94dcc6fcf706d24745bf5c714d857110890e548c
 }
 
 @media only screen and (max-width: 720px) {
@@ -1305,7 +1296,6 @@ input[type='radio'] {
     height: 20vw;
     width: 100%;
   }
-<<<<<<< HEAD
   
   .title {
     font-size: 14vw;
@@ -1322,12 +1312,8 @@ input[type='radio'] {
     bottom: .1vw;
     left: 2rem;
   }
-  
-  .carousel {
-=======
 
   .carousel  {
->>>>>>> 94dcc6fcf706d24745bf5c714d857110890e548c
     height: 58rem;
   }
 
@@ -1550,14 +1536,11 @@ input[type='radio'] {
     width: 38vw;
     height: auto;
   }
-<<<<<<< HEAD
 
   .carousel{
     height: 65rem;
   }
 
-=======
->>>>>>> 94dcc6fcf706d24745bf5c714d857110890e548c
 }
 
 @media only screen and (max-width: 550px) {
