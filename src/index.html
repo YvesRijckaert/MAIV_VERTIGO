@@ -10,17 +10,19 @@
 </head>
 
 <script>
+  WebFontConfig = {
+    google: {
+      families: ['Oswald: 400, 700', 'Open Sans: 400, 800']
+    }
+  };
 
-WebFontConfig = {
-  google: { families: ['Oswald: 400, 700', 'Open Sans: 400, 800'] }
-};
-
-   (function(d) {
-      var wf = d.createElement('script'), s = d.scripts[0];
-      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-      wf.async = true;
-      s.parentNode.insertBefore(wf, s);
-   })(document);
+  (function (d) {
+    var wf = d.createElement('script'),
+      s = d.scripts[0];
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+    wf.async = true;
+    s.parentNode.insertBefore(wf, s);
+  })(document);
 
 </script>
 
@@ -32,7 +34,7 @@ WebFontConfig = {
           <p class="subtitle">Losbreken van nepotisme</p>
       </div>
 
-    <img class="autograph-gif" src="assets/img/gif-autograph-sofia.gif" width="400" height="160" alt="autograph" />
+      <img class="autograph-gif" src="assets/img/gif-autograph-sofia.gif" width="400" height="160" alt="autograph" />
 
       <picture class="header-family-image">
         <source media="(max-width: 579px)" srcset="./assets/img/header-family.png" />
@@ -73,10 +75,8 @@ WebFontConfig = {
           <cite class="cite">Sofia Coppola</cite>
         </blockquote>
         <div class="social">
-          <a href="http://vertigoweb.be/">
-            <a class="end-image" href="http://vertigoweb.be/">
-              <img src="assets/img/vertigo.svg" alt="vertigo-logo" width="117" height="67">
-            </a>
+          <a class="end-image" href="http://vertigoweb.be/">
+            <img src="assets/img/vertigo.svg" alt="vertigo-logo" width="117" height="67">
           </a>
           <p class="CTA-social">Deel deze legende!</p>
           <a href="#">
@@ -111,8 +111,6 @@ WebFontConfig = {
             Ford Coppola:
           </p>
         </div>
-
-
         <article class="godfather1">
           <h3 class="godfather-title">Godfather I (1972)</h3>
           <p>Sofia Coppola speelde Michael Corleone’s babyneefje tijdens de climax op het einde van de film.</p>
@@ -151,117 +149,128 @@ WebFontConfig = {
           </blockquote>
         </article>
         <picture class="vader-image-block">
-            <source media="(max-width: 449px)" srcset="assets/img/vader.jpg" />
+          <source media="(max-width: 449px)" srcset="assets/img/vader.jpg" />
           <source media="(min-width: 450px)" srcset="assets/img/vader.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/vader.jpg" />
-          <img class="vader-image" height="494" width="480" alt="Sofia Coppola en haar vader" />
+          <img class="vader-image" src="assets/img/vader.jpg" height="494" width="480" alt="Sofia Coppola en haar vader" />
         </picture>
         <picture class="sofia-godfather-part3-image">
           <source media="(max-width: 449px)" srcset="assets/img/sofia-godfather-part3.png" />
           <source media="(min-width: 450px)" srcset="assets/img/sofia-godfather-part3.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/sofia-godfather-part3.png" />
-          <img class="sofia-godfather-part3-image" height="451" width="302" alt="Sofia Coppola in The Godfather III" />
+          <img class="sofia-godfather-part3-image" src="assets/img/sofia-godfather-part3.png" height="451" width="302" alt="Sofia Coppola in The Godfather III"
+          />
         </picture>
         <picture class="raspberry-image">
-            <source media="(max-width: 449px)" srcset="assets/img/raspberry.png" />
+          <source media="(max-width: 449px)" srcset="assets/img/raspberry.png" />
           <source media="(min-width: 450px)" srcset="assets/img/raspberry.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/raspberry.png" />
-          <img class="raspberry-image" height="206" width="174" alt="Golden Raspberry" />
+          <img class="raspberry-image" src="assets/img/raspberry.png" height="206" width="174" alt="Golden Raspberry" />
         </picture>
         <picture class="bloem-image">
-            <source media="(max-width: 449px)" srcset="assets/img/bloem.png" />
+          <source media="(max-width: 449px)" srcset="assets/img/bloem.png" />
           <source media="(min-width: 450px)" srcset="assets/img/bloem.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/bloem.png" />
-          <img class="bloem-image" height="154" width="205" alt="Bloem" />
+          <img class="bloem-image" src="assets/img/bloem.png" height="154" width="205" alt="Bloem" />
         </picture>
         <picture class="polaroid1-image revealOnScroll" data-timeout="200" data-animation="slideInUp">
           <source media="(max-width: 449px)" srcset="assets/img/polaroid1.png" />
           <source media="(min-width: 450px)" srcset="assets/img/polaroid1.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/polaroid1.png" />
-          <img class="polaroid-afb-image" height="358" width="426" alt="Polaroid 1: Filmen van The Godfather III" />
+          <img class="polaroid-afb-image" src="assets/img/polaroid1.png" height="358" width="426" alt="Polaroid 1: Filmen van The Godfather III"
+          />
         </picture>
         <picture class="polaroid2-image revealOnScroll" data-timeout="400" data-animation="slideInUp">
           <source media="(max-width: 449px)" srcset="assets/img/polaroid2.png" />
           <source media="(min-width: 450px)" srcset="assets/img/polaroid2.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/polaroid2.png" />
-          <img class="polaroid2-afb-image" height="389" width="528" alt="Polaroid 2: Sofia Coppola en haar vader" />
+          <img class="polaroid2-afb-image" src="assets/img/polaroid2.png" height="389" width="528" alt="Polaroid 2: Sofia Coppola en haar vader"
+          />
         </picture>
         <picture class="polaroid3-image revealOnScroll" data-timeout="600" data-animation="slideInUp">
           <source media="(max-width: 449px)" srcset="assets/img/polaroid3.png" />
           <source media="(min-width: 450px)" srcset="assets/img/polaroid3.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/polaroid3.png" />
-          <img class="polaroid3-afb-image" height="363" width="456" alt="Polaroid 3: Sofia Coppola haar trouwdag" />
+          <img class="polaroid3-afb-image" src="assets/img/polaroid3.png" height="363" width="456" alt="Polaroid 3: Sofia Coppola haar trouwdag"
+          />
         </picture>
       </div>
       <picture class="lick-the-star-container">
         <source media="(max-width: 449px)" srcset="assets/img/lickthestar.jpg" />
         <source media="(min-width: 450px)" srcset="assets/img/lickthestar.webp" type="image/webp" />
         <source media="(min-width: 450px)" srcset="assets/img/lickthestar.jpg" />
-        <img class="lick-the-star-image" height="558" width="1122" alt="Scene van Lick The Star" />
+        <img class="lick-the-star-image" src="assets/img/lickthestar.jpg" height="558" width="1122" alt="Scene van Lick The Star"
+        />
       </picture>
     </section>
     <section class="regi">
       <div class="container">
-        <article class="regi-article">
-        <h2 class="regi-title">Regiedebuut</h2>
-        <div class="regi-text">
-        <p class="regi-p">“Lick the Star” was het debuut van Sofia als regisseur. Haar visuele stijlelementen reflecteren op een
-          <strong>donkere dromerige wereld</strong>, een wereld bevolkt door jonge eenzame vrouwen en tienermeisjes. Diepe angsten
-          spelen zich af in mooie, lange opnames afgewerkt met een meeslepende soundtrack.</p>
-        <p class="regi-p">De film is uitgebracht in 1998, een jaar voor haar eerste langspeelfilm “The Virgin Suicides” werd uitgebracht. De
-          verhaallijn van de kortfilm omvat een meidengroep op een middelbare school die jongens willen vergiftigen. Kate
-          en Chloe, de twee hoofdrolspeelsters,
-          <strong>tonen respectievelijk de vele van de bepalende kwaliteiten van de latere vrouwelijke personages</strong> van Coppola.</p>
+        <div class="regi-article">
+          <h2 class="regi-title">Regiedebuut</h2>
+          <div class="regi-text">
+            <p class="regi-p">“Lick the Star” was het debuut van Sofia als regisseur. Haar visuele stijlelementen reflecteren op een
+              <strong>donkere dromerige wereld</strong>, een wereld bevolkt door jonge eenzame vrouwen en tienermeisjes. Diepe angsten
+              spelen zich af in mooie, lange opnames afgewerkt met een meeslepende soundtrack.</p>
+            <p class="regi-p">De film is uitgebracht in 1998, een jaar voor haar eerste langspeelfilm “The Virgin Suicides” werd uitgebracht.
+              De verhaallijn van de kortfilm omvat een meidengroep op een middelbare school die jongens willen vergiftigen.
+              Kate en Chloe, de twee hoofdrolspeelsters,
+              <strong>tonen respectievelijk de vele van de bepalende kwaliteiten van de latere vrouwelijke personages</strong> van
+              Coppola.
+            </p>
+          </div>
         </div>
-        </article>
         <picture class="sofia-window-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/sofia-window.jpg" />
           <source media="(min-width: 450px)" srcset="assets/img/sofia-window.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/sofia-window.jpg" />
-          <img class="sofia-window-image" height="596" width="482" alt="Sofia Coppola aan een raam" />
+          <img class="sofia-window-image" src="assets/img/sofia-window.jpg" height="596" width="482" alt="Sofia Coppola aan een raam"
+          />
         </picture>
         <picture class="bloem4-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
           <source media="(min-width: 450px)" srcset="assets/img/bloem3.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/bloem3.png" />
-          <img class="bloem4-image" height="197" width="250" alt="Bloem" />
+          <img class="bloem4-image" src="assets/img/bloem3.png" height="197" width="250" alt="Bloem" />
         </picture>
         <picture class="diamant-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/diamant.png" />
           <source media="(min-width: 450px)" srcset="assets/img/diamant.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/diamant.png" />
-          <img class="diamant-image revealOnScroll" data-animation="rotate2" height="50" width="50" alt="Diamant" />
+          <img class="diamant-image revealOnScroll" src="assets/img/diamant.png" data-animation="rotate2" height="50" width="50" alt="Diamant"
+          />
         </picture>
-        <picture class="diamant2-image-container" >
+        <picture class="diamant2-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/diamant.png" />
           <source media="(min-width: 450px)" srcset="assets/img/diamant.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/diamant.png" />
-          <img class="diamant2-image revealOnScroll" data-animation="rotate" height="40" width="40" alt="Diamant" />
+          <img class="diamant2-image revealOnScroll" src="assets/img/diamant.png" data-animation="rotate" height="40" width="40" alt="Diamant"
+          />
         </picture>
         <picture class="diamant3-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/diamant.png" />
           <source media="(min-width: 450px)" srcset="assets/img/diamant.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/diamant.png" />
-          <img class="diamant3-image revealOnScroll" data-animation="rotate2" height="30" width="30" alt="Diamant" />
+          <img class="diamant3-image revealOnScroll" src="assets/img/diamant.png" data-animation="rotate2" height="30" width="30" alt="Diamant"
+          />
         </picture>
       </div>
     </section>
     <section class="eye">
       <div class="container">
-        <article class="eye-article">
-        <h2 class="eye-title">Under the public eye</h2>
-        <div class="eye-content1">
-          <p class="eye-p">Sofia Coppola is opgegroeid onder “the public eye”, en in 2013 maakte ze een
-            <strong>film over een reeks grote diefstallen die heel Hollywood geshockeerd hebben</strong>. Nochtans interesseert het
-            leven van de high society en filmsterren in Hollywood haar in het minst niet, en maakt ze er ook geen deel van
-            uit. Maar deze waargebeurde verhaallijn is iets dat al een tijdje in haar hoofd speelde,
-            <strong>mede door de aanraking en interesse in haar tienerjaren met de ‘fashion-obsessed culture’ van Los Angeles</strong>.</p>
-          <p class="eye-p">Paris Hilton was een van de slachtoffers van de inbraken en Coppola kreeg toelating om in haar huis en in haar
-            dressings te filmen, waar de echte inbraken plaats vonden.</p>
-          <p class="eye-p">Toen de eerste opnames waren, was de hele cast en crew verbijsterd van haar huis en vooral de schoencollectie.
-            Het was iets waanzinnigs.</p>
+        <div class="eye-article">
+          <h2 class="eye-title">Under the public eye</h2>
+          <div class="eye-content1">
+            <p class="eye-p">Sofia Coppola is opgegroeid onder “the public eye”, en in 2013 maakte ze een
+              <strong>film over een reeks grote diefstallen die heel Hollywood geshockeerd hebben</strong>. Nochtans interesseert
+              het leven van de high society en filmsterren in Hollywood haar in het minst niet, en maakt ze er ook geen deel
+              van uit. Maar deze waargebeurde verhaallijn is iets dat al een tijdje in haar hoofd speelde,
+              <strong>mede door de aanraking en interesse in haar tienerjaren met de ‘fashion-obsessed culture’ van Los Angeles</strong>.</p>
+            <p class="eye-p">Paris Hilton was een van de slachtoffers van de inbraken en Coppola kreeg toelating om in haar huis en in haar
+              dressings te filmen, waar de echte inbraken plaats vonden.</p>
+            <p class="eye-p">Toen de eerste opnames waren, was de hele cast en crew verbijsterd van haar huis en vooral de schoencollectie.
+              Het was iets waanzinnigs.</p>
+          </div>
         </div>
-        </article>
         <div class="eye-content2">
           <p class="eye-p">Ook wederom betrok Sofia haar vader bij haar project. Bij “The Bling Ring” was haar vader een van de producers.</p>
           <p class="eye-p">Nochtans houdt Sofia van onafhankelijkheid, maar met haar vader heeft ze een unieke band. Ze toont hem altijd de
@@ -278,32 +287,33 @@ WebFontConfig = {
           <source media="(max-width: 449px)" srcset="assets/img/blingbling.jpg" />
           <source media="(min-width: 450px)" srcset="assets/img/blingbling.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/blingbling.jpg" />
-          <img class="sofia-bling-image" height="719" width="524" alt="Sofia Coppola in The Bling Bling" />
+          <img class="sofia-bling-image" src="assets/img/blingbling.jpg" height="719" width="524" alt="Sofia Coppola in The Bling Bling"
+          />
         </picture>
         <picture class="louboutin-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
           <source media="(min-width: 450px)" srcset="assets/img/louboutin.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/louboutin.png" />
-          <img class="louboutin-image" height="167" width="201" alt="Louboutin schoen" />
+          <img class="louboutin-image" src="assets/img/louboutin.png" height="167" width="201" alt="Louboutin schoen" />
         </picture>
         <picture class="zonnebril-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
           <source media="(min-width: 450px)" srcset="assets/img/zonnebril.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/zonnebril.png" />
-          <img class="zonnebril-image" height="90" width="151" alt="Zonnebril" />
+          <img class="zonnebril-image" src="assets/img/zonnebril.png" height="90" width="151" alt="Zonnebril" />
         </picture>
         <picture class="louboutin2-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/louboutin2.png" />
           <source media="(min-width: 450px)" srcset="assets/img/louboutin2.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/louboutin2.png" />
-          <img class="louboutin2-image" height="176" width="140" alt="Zonnebril" />
+          <img class="louboutin2-image" src="assets/img/louboutin2.png" height="176" width="140" alt="Zonnebril" />
         </picture>
       </div>
       <picture class="marie-image-container">
         <source media="(max-width: 449px)" srcset="assets/img/marie.jpg" />
         <source media="(min-width: 450px)" srcset="assets/img/marie.webp" type="image/webp" />
         <source media="(min-width: 450px)" srcset="assets/img/marie.jpg" />
-        <img class="marie-image" height="558" width="1122" alt="Filming Marie Antoinette" />
+        <img class="marie-image" src="assets/img/marie.jpg" height="558" width="1122" alt="Filming Marie Antoinette" />
       </picture>
     </section>
     <section class="slavery">
@@ -351,54 +361,55 @@ WebFontConfig = {
           <source media="(max-width: 449px)" srcset="assets/img/oscar.png" />
           <source media="(min-width: 450px)" srcset="assets/img/oscar.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/oscar.png" />
-          <img class="oscar-image" height="473" width="380" alt="Oscar nominaties" />
+          <img class="oscar-image" src="assets/img/oscar.png" height="473" width="380" alt="Oscar nominaties" />
         </picture>
         <picture class="bloem2-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/bloem.png" />
           <source media="(min-width: 450px)" srcset="assets/img/bloem.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/bloem.png" />
-          <img class="bloem2-image revealOnScroll" data-animation="opacity" height="154" width="205" alt="Bloem" />
+          <img class="bloem2-image revealOnScroll" src="assets/img/bloem.png" data-animation="opacity" height="154" width="205" alt="Bloem"
+          />
         </picture>
         <picture class="bloem3-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
           <source media="(min-width: 450px)" srcset="assets/img/bloem2.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/bloem2.png" />
-          <img class="bloem3-image" height="163" width="200" alt="Bloem" />
+          <img class="bloem3-image" src="assets/img/bloem2.png" height="163" width="200" alt="Bloem" />
         </picture>
         <picture class="polaroid4-image-container revealOnScroll" data-timeout="200" data-animation="slideInUp">
           <source media="(max-width: 449px)" srcset="assets/img/polaroid4.png" />
           <source media="(min-width: 450px)" srcset="assets/img/polaroid4.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/polaroid4.png" />
-          <img class="polaroid4-image" height="407" width="513" alt="Polaroid 4: Dinner in Vegas" />
+          <img class="polaroid4-image" src="assets/img/polaroid4.png" height="407" width="513" alt="Polaroid 4: Dinner in Vegas" />
         </picture>
       </div>
     </section>
     <section class="tokio">
       <div class="container">
-        <article class="tokio-article">
+        <div class="tokio-article">
           <h2 class="tokio-title">The spirit of place: Tokio</h2>
           <p class="japanese">ソフィアコッポラ</p>
           <p class="tokio-p">
-            <strong>Sofia wilde ook altijd al een film maken in Tokio. Het is een stad die haar al van kinds af aan fascineerde. Ze
-              is er ook al verschillende keren geweest, aangezien ze enkele jaren geleden in Tokio actief was in de fotografie
+            <strong>Sofia wilde ook altijd al een film maken in Tokio. Het is een stad die haar al van kinds af aan fascineerde.
+              Ze is er ook al verschillende keren geweest, aangezien ze enkele jaren geleden in Tokio actief was in de fotografie
               en modewereld. Ook voor ze er aan de slag ging bracht ze al veel tijd door in Tokio</strong>.</p>
           <p class="tokio-p">Pluspunt was dat ze de omgeving en setting dus goed kende. Ze wilde ook 's nachts met neon werken. Uiteraard kent
-            Tokio voor dat onderwerp geen gelijke. Ze wou ook een romantisch liefdesverhaal brengen, gefilmd in het Park Hyatt
-            hotel. Ze verbleef er tijdens de promotour van haar regiedebuut “Virgin Suicides”. Het is een van haar favoriete
-            plaatsen in de wereld en werkt voor haar heel inspirerend.</p>
+            Tokio voor dat onderwerp geen gelijke. Ze wou ook een romantisch liefdesverhaal brengen, gefilmd in het Park
+            Hyatt hotel. Ze verbleef er tijdens de promotour van haar regiedebuut “Virgin Suicides”. Het is een van haar
+            favoriete plaatsen in de wereld en werkt voor haar heel inspirerend.</p>
           <p class="tokio-p">De film is opgenomen met een lichtgewichtcamera, om heel mobiel te zijn in de miljoenenstad. En de mensen merkten
             er bijna niks van dat er een succesvolle film opgenomen werd.
-            <strong>Haar vader wou het idee uit haar hoofd praten, want je hebt dan uiteraard beperkingen naar licht en klank toe als
-              je een kleinere mobielere camera gebruikt</strong>. Francis Coppola was toen ook heel hard gefocust op HD-films.
-            Toch bleef ze bij haar idee een niet opdringerige filmervaring naar Tokio brengen, zonder de grote filmmiddelen
-            in te zetten. Scarlet Johansen werd gevraagd voor de hoofdrol. De opnames waren klaar op zevenentwintig dagen tijd.
-          </p>
-        </article>
+            <strong>Haar vader wou het idee uit haar hoofd praten, want je hebt dan uiteraard beperkingen naar licht en klank toe
+              als je een kleinere mobielere camera gebruikt</strong>. Francis Coppola was toen ook heel hard gefocust op
+            HD-films. Toch bleef ze bij haar idee een niet opdringerige filmervaring naar Tokio brengen, zonder de grote
+            filmmiddelen in te zetten. Scarlet Johansen werd gevraagd voor de hoofdrol. De opnames waren klaar op zevenentwintig
+            dagen tijd.</p>
+        </div>
         <picture class="japan-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/japan.png" />
           <source media="(min-width: 450px)" srcset="assets/img/japan.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/japan.png" />
-          <img class="japan-image" height="602" width="543" alt="Sofia Coppola in Japan" />
+          <img class="japan-image" src="assets/img/japan.png" height="602" width="543" alt="Sofia Coppola in Japan" />
         </picture>
       </div>
     </section>
@@ -406,34 +417,34 @@ WebFontConfig = {
       <div class="container">
         <h2 class="quiz-title">Welk filmpersonage ben jij?</h2>
         <div class="startscreen">
-          <img class="autograph-gif" src="assets/img/gif-autograph-sofia.gif" width="400" height="160" alt="autograph" />
-          <p>Ontdek het filmpersonage uit de films van Sofia Coppola dat het meeste bij jou past!</p>
-          <button class="start-screen">Doe de test!</button>
+          <p class="startscreen-info">Ontdek het filmpersonage uit de films van Sofia Coppola dat het meeste bij jou past!</p>
+          <img class="autograph-gif gif-quiz" src="assets/img/gif-autograph-sofia.gif" width="400" height="160" alt="autograph" />
+          <button class="startscreen-btn">Doe de test!</button>
         </div>
         <div class="quizcontent hide" id="reactcontent"></div>
         <picture class="louboutin3-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
           <source media="(min-width: 450px)" srcset="assets/img/louboutin.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/louboutin.png" />
-          <img class="louboutin3-image" height="119" width="143" alt="Louboutin schoen" />
+          <img class="louboutin3-image" src="assets/img/louboutin.png" height="119" width="143" alt="Louboutin schoen" />
         </picture>
         <picture class="louboutin4-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
           <source media="(min-width: 450px)" srcset="assets/img/louboutin2.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/louboutin2.png" />
-          <img class="louboutin4-image" height="112" width="100" alt="Zonnebril" />
+          <img class="louboutin4-image" src="assets/img/louboutin2.png" height="112" width="100" alt="Zonnebril" />
         </picture>
         <picture class="zonnebril2-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
           <source media="(min-width: 450px)" srcset="assets/img/zonnebril2.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/zonnebril2.png" />
-          <img class="zonnebril2-image" height="90" width="151" alt="Zonnebril" />
+          <img class="zonnebril2-image" src="assets/img/zonnebril2.png" height="90" width="151" alt="Zonnebril" />
         </picture>
         <picture class="bloem5-image">
           <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
           <source media="(min-width: 450px)" srcset="assets/img/bloem.webp" type="image/webp" />
           <source media="(min-width: 450px)" srcset="assets/img/bloem.png" />
-          <img class="bloem5-image" height="154" width="205" alt="Bloem" />
+          <img class="bloem5-image" src="assets/img/bloem.png" height="154" width="205" alt="Bloem" />
         </picture>
       </div>
     </section>
@@ -445,12 +456,14 @@ WebFontConfig = {
         <p>Krijg weekelijks updates van Vertigo over alle nieuwtjes in de filmwereld.</p>
 
         <form class="nieuwsletter-submit-form" action="#">
-            <div class="input-nieuwsbrief">
-              <input type="hidden" name="action" value="done" />
-              <input class='newsletter-input' id="inputText" type='email' name='email' placeholder='E-mailadres' required />
-              <button class="button button--arrow" type="submit" value="done"><span>submit</span></button>
-            </div>
-          </form>
+          <div class="input-nieuwsbrief">
+            <input type="hidden" name="action" value="done" />
+            <input class='newsletter-input' id="inputText" type='email' name='email' placeholder='E-mailadres' required />
+            <button class="button button--arrow" type="submit" value="done">
+              <span>submit</span>
+            </button>
+          </div>
+        </form>
 
         <div class="hoogte-social">
           <a href="#">
@@ -474,6 +487,7 @@ WebFontConfig = {
         </p>
       </section>
       <section class="end">
+        <h2 class="hide">Footer</h2>
         <a class="end-image" href="http://vertigoweb.be/">
           <img src="assets/img/vertigo.svg" alt="vertigo-logo" width="117" height="67">
         </a>

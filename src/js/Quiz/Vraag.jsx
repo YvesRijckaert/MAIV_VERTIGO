@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Vraag = ({vraag}) => {
-  return <p>{vraag}</p>;
+  return <p className="question-vraag">{vraag}</p>;
 };
 
 Vraag.propTypes = {

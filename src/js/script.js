@@ -23,7 +23,10 @@
           }
         });
     });
+    document.querySelector(`.startscreen-btn`).onclick = () => {
+      document.querySelector(`.startscreen`).style.display = 'none';
+      document.querySelector(`.quizcontent`).classList.remove(`hide`);
+    };
   };
-
   init();
 }
