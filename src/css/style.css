@@ -790,6 +790,15 @@ h2 {
     width: 92vw;
   }
 
+  .carousel-slide-image {
+    width: 24vw;
+    height: auto;
+  }
+
+  .carousel-arrow carousel-arrow-left{
+    width: 2vw;
+  }
+
   .intro .container {
     display: grid;
     grid-template: 2fr 1fr / 1fr 2fr .3fr;
