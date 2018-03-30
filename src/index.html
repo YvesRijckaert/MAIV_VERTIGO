@@ -28,12 +28,9 @@ WebFontConfig = {
   <header class="header">
     <div class="container">
       <h1 class="title">Sofia Coppola</h1>
-      <!-- <svg width="100vw" height="20vh">
-      <text class="title" x="0" y="0" text-anchor="middle" alignment-baseline="central" fill="#facdd3">Sofia Coppola</text>
-    </svg> -->
       <p class="subtitle">Losbreken van nepotisme</p>
 
-    <img class="autograph-gif" src="assets/img/gif-autograph-sofia.gif" width="400" height="160" alt="autograph">
+    <img class="autograph-gif" src="assets/img/gif-autograph-sofia.gif" width="400" height="160" alt="autograph" />
 
       <picture class="header-family-image">
         <source media="(max-width: 579px)" srcset="./assets/img/header-family.png" />
@@ -406,7 +403,12 @@ WebFontConfig = {
     <section class="quiz">
       <div class="container">
         <h2 class="quiz-title">Welk filmpersonage ben jij?</h2>
-        <div class="quizcontent" id="reactcontent"></div>
+        <div class="startscreen">
+          <img class="autograph-gif" src="assets/img/gif-autograph-sofia.gif" width="400" height="160" alt="autograph" />
+          <p>Ontdek het filmpersonage uit de films van Sofia Coppola dat het meeste bij jou past!</p>
+          <button class="start-screen">Doe de test!</button>
+        </div>
+        <div class="quizcontent hide" id="reactcontent"></div>
         <picture class="louboutin3-image-container">
           <source media="(max-width: 449px)" srcset="assets/img/default.gif" />
           <source media="(min-width: 450px)" srcset="assets/img/louboutin.webp" type="image/webp" />
