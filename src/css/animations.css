@@ -1,0 +1,65 @@
+/* animations */
+
+@keyframes slideInUp {
+
+    from {
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInUp {
+    animation: slideInUp 2s;
+  }
+  
+  @keyframes rotate {
+  
+    from {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+  
+  }
+  
+  .rotate {
+    animation: rotate 8s infinite;
+  }
+  
+  @keyframes rotate2 {
+  
+    from {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform: rotate(-360deg);
+      opacity: 1;
+    }
+  
+  }
+  
+  .rotate2 {
+    animation: rotate2 5s;
+  }
+  
+  @keyframes opacity {
+  
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  
+  }

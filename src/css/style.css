@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'vars';
+@import 'animations';
 
 html {
   font-size: 62.5%;
@@ -245,7 +246,7 @@ h2 {
 
 .carousel {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 2fr 1fr;
+  grid-template: auto auto / 1fr 2fr 1fr;
   grid-template-areas:
     'foto foto foto'
     'links tekst rechts';
@@ -272,8 +273,8 @@ h2 {
   align-self: center;
   background-color: var(--pink-lace);
   border: none;
-  width: 14rem;
-  height: 16rem;
+  width: 7rem;
+  height: 8rem;
   appearance: none;
   background-size: 33%;
   border-radius: none;
@@ -300,6 +301,11 @@ h2 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.carousel-slides {
+  align-self: center;
+  justify-self: center;
 }
 
 /* vader */
@@ -840,6 +846,15 @@ h2 {
   padding-bottom: 2rem;
 }
 
+.carousel-slide-image {
+  width: 16vw;
+  height: auto;
+}
+
+.carousel-arrow carousel-arrow-left{
+  width: 2vw;
+}
+
 /* START RESPONSIVE */
 
 @media only screen and (max-width: 1100px) {
@@ -847,15 +862,6 @@ h2 {
   .container {
     background-color: red;
     width: 92vw;
-  }
-
-  .carousel-slide-image {
-    width: 24vw;
-    height: auto;
-  }
-
-  .carousel-arrow carousel-arrow-left{
-    width: 2vw;
   }
 
   .intro .container {
@@ -1060,7 +1066,6 @@ h2 {
   .eye .container {
     grid-template-areas:
       'image image'
-      'title title'
       'content1 content1'
       'content1 content1'
       'content1 content1'
@@ -1131,6 +1136,20 @@ h2 {
     margin-top: 0;
     align-self: center;
     justify-self: center;
+  }
+
+  .diamant2-image {
+    top: 26rem;
+  }
+
+  .bloem4-image {
+    width: 30vw;
+    height: auto;
+    right: 10rem;
+  }
+
+  .diamant3-image {
+    top: 20rem;
   }
 
   .quote-intro {
@@ -1307,75 +1326,142 @@ h2 {
   }
 
 }
-/* animations */
-
-@keyframes slideInUp {
-
-  from {
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slideInUp {
-  animation: slideInUp 2s;
-}
-
-@keyframes rotate {
-
-  from {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-
-  to {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-
-}
-
-.rotate {
-  animation: rotate 8s infinite;
-}
-
-@keyframes rotate2 {
-
-  from {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-
-  to {
-    transform: rotate(-360deg);
-    opacity: 1;
-  }
-
-}
-
-.rotate2 {
-  animation: rotate2 5s;
-}
-
-@keyframes opacity {
-
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-
-}
 
 @media only screen and (max-width: 550px) {
 
   .container {
     background-color: pink;
+  }
+
+  .end {
+    flex-direction: column;
+  }
+
+  .slavery .container {
+    grid-template: 1fr auto auto / 1fr 1fr;
+    grid-template-areas:
+      'title title'
+      'p1 p1'
+      'p2 p2';
+  }
+
+  .vader .container {
+    display: grid;
+    grid-template: 35vw auto auto auto 70vw auto 25rem min-content / 1fr 1fr;
+    grid-gap: 3rem;
+    grid-template-areas:
+      'vader-image vader-image'
+      'vader-info vader-info'
+      'article1 article1'
+      'article2 article2'
+      '. .'
+      'article3 article3'
+      'quote quote'
+      'kritisch kritisch';
+  }
+
+  .raspberry-image, .sofia-godfather-part3-image, .bloem-image {
+    grid-row: 5;
+  }
+
+  .polaroid1-image, .polaroid2-image, .polaroid3-image {
+    grid-row: 5;
+  }
+
+  .intro .container {
+    display: grid;
+    grid-template: 2fr auto auto / 1fr 1fr;
+    grid-template-areas:
+      'intro intro'
+      'social social'
+      'quote quote';
+  }
+
+  .sofia-godfather-part3-image {
+    max-width: 40vw;
+  }
+
+  .bloem-image {
+    top: 11rem;
+    width: 26vw;
+    height: auto;
+  }
+
+  .raspberry-image {
+    right: 4rem;
+    width: 28vw;
+    height: auto;
+  }
+
+  .bloem4-image{
+    display: none;
+  }
+  .zonnebril-image {
+    display: none;
+  }
+
+  .louboutin-image {
+    display: none;
+  }
+
+  .eye .container{
+    grid-gap: 6rem 3rem;
+  }
+
+  .louboutin3-image, .louboutin4-image, .zonnebril2-image, .bloem5-image {
+    display: none;
+  }
+
+  .end-image, .end-p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+    line-height: 120%;
+  }
+
+  .carousel-images {
+    justify-content: space-between;
+  }
+
+  .carousel-slide-image {
+    width: 60%;
+  }
+
+  .bloem3-image {
+    display: none;
+  }
+
+  .polaroid4-image-container, .polaroid4-image-container img, .bloem3-image-container, .bloem3-image-container img {
+    max-width: 95%;
+  }
+
+  .permission .container {
+    grid-template-areas:
+      'image image'
+      'content content '
+      'content content'
+      'content2 content2'
+      'polaroid polaroid'
+      'quote quote';
+  }
+
+  .tokio .container {
+    grid-row-gap: 3rem;
+    grid-template-areas:
+      'image image'
+      'image image'
+      'article article'
+      'article article'
+      'article article';
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+  .container{
+    background-color: yellow;
   }
 }
