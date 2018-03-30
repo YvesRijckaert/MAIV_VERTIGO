@@ -721,6 +721,9 @@ h2 {
   align-items: center;
 }
 
+.startscreen-btn {
+  margin-top: 15rem;
+}
 
 .quiz {
   margin-top: 5rem;
@@ -730,9 +733,6 @@ h2 {
   margin-top: 3rem;
   background-color: var(--glitter);
   height: 40rem;
-}
-
-.quiz .container {
   position: relative;
 }
 
