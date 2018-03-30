@@ -14,8 +14,8 @@ class QuizApp extends Component {
       antwoordOpties: [],
       antwoord: ``,
       answersCount: {
-        "Lux Lisbon": 0,
-        "Nicki Moore": 0
+        "Lux Lisbon - The Virgin Suicides": 0,
+        "Nicki Moore - The Bling Ring": 0
       },
       resultaat: ``
     };
