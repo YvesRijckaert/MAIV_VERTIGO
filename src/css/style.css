@@ -717,13 +717,18 @@ h2 {
 .startscreen {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 60%;
 }
 
+.gif-quiz {
+  z-index: 0;
+}
+
 .startscreen-btn {
-  margin-top: 15rem;
+  z-index: 1;
+  margin-top: 7rem;
   font-size: var(--font-smalltitle);
   color: var(--honey-flower);
   background-color: var(--maya-blue);
@@ -751,7 +756,7 @@ h2 {
 
 .quiz-title {
   position: relative;
-  top: -8rem;
+  top: -9.5rem;
 }
 
 .quiz .container {
@@ -771,7 +776,7 @@ h2 {
 
 .bloem5-image {
   position: absolute;
-  top: 0;
+  top: -1.5rem;
   left: -4rem;
 }
 
