@@ -723,10 +723,29 @@ h2 {
 
 .startscreen-btn {
   margin-top: 15rem;
+  font-size: var(--font-smalltitle);
+  color: var(--honey-flower);
+  background-color: var(--maya-blue);
+  border: none;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--honey-flower);
+    color: var(--maya-blue);
+  }
 }
 
 .quiz {
   margin-top: 5rem;
+}
+
+.quiz-title {
+  position: relative;
+  top: -8rem;
 }
 
 .quiz .container {
@@ -746,7 +765,7 @@ h2 {
 
 .bloem5-image {
   position: absolute;
-  top: 3.5rem;
+  top: 0;
   left: -4rem;
 }
 
