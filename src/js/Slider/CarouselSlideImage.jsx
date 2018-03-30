@@ -60,7 +60,6 @@ class CarouselSlideImage extends Component {
           />
           <source
             srcSet={`assets/img/${img}.jpg`}
-            type="image/jpg"
           />
           <img
             className="carousel-slide-image"
