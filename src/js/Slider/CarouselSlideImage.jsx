@@ -55,12 +55,10 @@ class CarouselSlideImage extends Component {
       >
         <picture className="carousel-slide-image">
           <source
-            media="(min-width: 450px)"
             srcSet={`assets/img/${img}.webp`}
             type="image/webp"
           />
           <source
-            media="(min-width: 450px)"
             srcSet={`assets/img/${img}.jpg`}
             type="image/jpg"
           />
