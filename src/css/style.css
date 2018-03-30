@@ -66,7 +66,7 @@ p {
 .header {
   border-top: 1rem solid var(--honey-flower);
   border-bottom: 2rem solid var(--maya-blue);
-  margin-top: 10rem;
+  margin-top: 6rem;
   background-image: url(../assets/img/pattern.jpg);
   background-repeat: repeat;
   background-color: var(--pink-lace);
@@ -152,6 +152,7 @@ p {
   font-weight: 700;
 }
 
+
 .intro-text {
   grid-area: intro;
   width: 100%;
@@ -179,9 +180,10 @@ p {
 }
 
 .social {
+  margin-top: 4rem;
   grid-area: social;
   justify-self: center;
-  align-self: center;
+  align-self: start;
 }
 
 .CTA-social, .godfather-title {
@@ -274,6 +276,7 @@ h2 {
 .vader-image-block {
   grid-area: vader-image;
   margin-bottom: 5rem;
+  width: 100%;
 }
 
 .vader-image {
@@ -316,7 +319,7 @@ h2 {
 }
 
 .sofia-godfather-part3-image {
-  max-width: 35vw;
+  max-width: 30vw;
   height: auto;
 }
 
@@ -324,7 +327,7 @@ h2 {
   position: relative;
   z-index: 1;
   top: 15rem;
-  right: -2rem;
+  right: -1rem;
 }
 
 .raspberry-image {
@@ -397,6 +400,7 @@ h2 {
 }
 
 .regi {
+  margin-top: 8rem;
   margin-bottom: 16rem;
 }
 
@@ -451,7 +455,7 @@ h2 {
   grid-template: repeat(7, min-content) / 1fr 1fr;
   grid-gap: 6rem 3rem;
   grid-template-areas:
-    'image title'
+    'image content1'
     'image content1'
     'image content1'
     'image content1'
@@ -465,7 +469,7 @@ h2 {
   grid-area: title;
 }
 
-.eye-content1 {
+.eye-article {
   grid-area: content1;
 }
 
@@ -485,8 +489,10 @@ h2 {
 
 .louboutin-image {
   position: relative;
-  top: 58rem;
-  left: 35rem;
+  top: 51rem;
+  left: 20vw;
+  width: 33%;
+  height: auto;
 }
 
 .louboutin2-image {
@@ -522,11 +528,15 @@ h2 {
 
 .slavery .container {
   display: grid;
-  grid-template: 1fr 3fr / 1fr 1fr;
+  grid-template: 1fr auto / 1fr 1fr;
   grid-column-gap: 3rem;
   grid-template-areas:
-    'title .'
+    'title title'
     'p1 p2';
+}
+
+.slavery-title{
+  grid-area: title;
 }
 
 .slavery-p:nth-child(n + 1) {
@@ -587,15 +597,17 @@ h2 {
   justify-self: flex-end;
 }
 
-.polaroid4-image-container, .bloem3-image-container {
+.polaroid4-image-container, .polaroid4-image-container img, .bloem3-image-container, .bloem3-image-container img{
   grid-area: polaroid;
   z-index: 2;
+  max-width: 40vw;
+  height: auto;
 }
 
 .bloem3-image {
   position: relative;
-  top: 26rem;
-  left: 38rem;
+  top: 24rem;
+  left: 32rem;
   z-index: 1;
 }
 
@@ -765,4 +777,470 @@ h2 {
 .end-image, .end-p {
   padding-top: 3rem;
   padding-bottom: 2rem;
+}
+
+/* START RESPONSIVE */
+
+@media only screen and (max-width: 1100px) {
+
+  .container {
+    background-color: red;
+    width: 92vw;
+  }
+
+  .intro .container {
+    display: grid;
+    grid-template: 2fr 1fr / 1fr 2fr .3fr;
+  }
+
+  .quote {
+    max-width: 60rem;
+  }
+
+  .vader-image {
+    max-width: 98%;
+  }
+
+  .godfather-beschuldiging {
+    padding-top: .8rem;
+  }
+
+  .vader .container {
+    grid-template-columns: 1fr 1.2fr;
+    grid-gap: 6rem;
+  }
+
+  .vader-quote {
+    margin-left: 0;
+    width: 50%;
+  }
+
+  .polaroid1-image, .polaroid2-image, .polaroid3-image {
+    max-width: 42vw;
+  }
+
+  .zonnebril-image {
+    left: -1rem;
+  }
+
+  .bloem4-image {
+    top: 26rem;
+    right: 16vw;
+  }
+
+  .diamant2-image {
+    right: 4vw;
+  }
+
+  .diamant3-image {
+    right: 7vw;
+  }
+
+  .eye .container {
+    display: grid;
+    grid-gap: 6rem 4rem;
+  }
+
+  .sofia-bling-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1rem solid var(--maya-blue);
+  }
+
+  .louboutin2-image {
+    left: -2rem;
+    top: -6rem;
+  }
+
+  .louboutin-image {
+    left: 20vw;
+    top: 57vw;
+  }
+
+  .oscar-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .permission .container {
+    display: grid;
+    grid-row-gap: 3rem;
+    grid-template: 1fr .5fr auto / 1fr 1fr;
+    grid-template-areas:
+      'image content'
+      'content2 content2'
+      'polaroid quote';
+  }
+
+  .oscar-image-container, .bloem2-image-container {
+    grid-area: image;
+    width: 80%;
+  }
+
+  .bloem2-image {
+    display: none;
+    transform: rotate(90deg);
+  }
+
+  .polaroid4-image {
+    max-width: 40vw;
+    height: auto;
+  }
+
+  .bloem3-image {
+    left: 10rem;
+    top: 13rem;
+  }
+
+  .permission-quote {
+    grid-area: quote;
+    align-self: start;
+    justify-self: center;
+  }
+
+  .japan-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer .container {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 7%;
+  }
+
+}
+
+@media only screen and (max-width: 860px) {
+
+  .container {
+    background-color: lime;
+  }
+
+  .intro .container {
+    grid-gap: 1rem;
+    grid-template: 2fr auto / .7fr 1fr .3fr;
+    grid-template-areas:
+      'social intro intro'
+      '. quote quote';
+  }
+
+  .footer .container {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5%;
+  }
+
+  .raspberry-image {
+    right: 5vw;
+    top: 10vw;
+  }
+
+  .bloem-image {
+    top: 15vw;
+    right: 0;
+  }
+
+  .vader .container {
+    grid-gap: 2rem;
+    display: grid;
+    grid-template-rows: auto min-content auto auto min-content;
+    grid-template-areas:
+      'vader-image vader-info'
+      'article1 article2'
+      'article3 article3'
+      'quote quote'
+      'kritisch .';
+  }
+
+  .vader-image-block {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .vader-image {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .louboutin2-image {
+    top: -3vw;
+    width: 20%;
+    height: auto;
+  }
+
+  .louboutin-image {
+    top: 54vw;
+    width: 20%;
+    height: auto;
+  }
+
+  .zonnebril-image {
+    top: 43vw;
+  }
+
+  .lick-the-star-image, .lick-the-star-container {
+    margin-top: -20rem;
+  }
+
+  .permission-content2 {
+    max-width: 80%;
+  }
+
+  .eye .container {
+    grid-template-areas:
+      'image image'
+      'title title'
+      'content1 content1'
+      'content1 content1'
+      'content1 content1'
+      'quote quote'
+      'video video'
+      'content2 content2';
+    margin-bottom: 10rem;
+  }
+
+  .sofia-bling-container img, .sofia-bling-container source {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+  }
+
+  .sofia-bling-container {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .marie-image-container img, .marie-image-container source {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+  }
+
+  .marie-image-container {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .eye-p {
+    max-width: 75%;
+  }
+
+  .tokio .container {
+    grid-template-areas:
+      'image .'
+      'image .'
+      'article article'
+      'article article'
+      'article article';
+  }
+
+  .tokio-article {
+    max-width: 75%;
+  }
+
+}
+
+@media only screen and (max-width: 720px) {
+
+  .container {
+    background-color: lightblue;
+  }
+
+  .intro .container {
+    display: grid;
+    grid-template: 2fr auto / 1fr 1fr;
+    grid-template-areas:
+      'intro intro'
+      'social quote';
+  }
+
+  .social {
+    margin-top: 0;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .quote-intro {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .polaroid1-image {
+    top: -.5rem;
+  }
+
+  .polaroid2-image {
+    top: 4rem;
+  }
+
+  .polaroid3-image {
+    top: 8rem;
+  }
+
+  .vader .container {
+    display: grid;
+    grid-template: 35vw auto min-content 60vw auto 25rem min-content / 1fr 1fr;
+    grid-gap: 3rem;
+    grid-template-areas:
+      'vader-image vader-image'
+      'vader-info vader-info'
+      'article1 article2'
+      '. .'
+      'article3 article3'
+      'quote quote'
+      'kritisch kritisch';
+  }
+
+  .raspberry-image, .sofia-godfather-part3-image, .bloem-image {
+    grid-row: 4;
+    grid-column: 1;
+    justify-self: flex-end;
+    position: relative;
+    top: -2rem;
+  }
+
+  .vader-quote {
+    width: 100%;
+  }
+
+  .kritisch {
+    bottom: 0;
+  }
+
+  .bloem-image {
+    position: relative;
+    z-index: 1;
+    top: 11rem;
+    right: 0;
+  }
+
+  .raspberry-image {
+    position: relative;
+    top: 7rem;
+    right: 5rem;
+  }
+
+  .godfather3 {
+    width: 100%;
+  }
+
+  .sofia-godfather-part3-image {
+    max-width: 30vw;
+    height: auto;
+  }
+
+  .vader-image-block {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .vader-image {
+    width: 100%;
+    height: 35vw;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .polaroid1-image, .polaroid2-image, .polaroid3-image {
+    grid-column: 2;
+    grid-row: 4;
+    justify-self: center;
+    max-width: 36vw;
+    height: auto;
+  }
+
+  .lick-the-star-container, .lick-the-star-container img {
+    height: 40rem;
+  }
+
+  .eye-quote {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .permission .container {
+    display: grid;
+    grid-row-gap: 3rem;
+    grid-template: repeat(6, auto) / 1fr 1fr;
+    grid-template-areas:
+      'image .'
+      'content content '
+      'content content'
+      'content2 content2'
+      'polaroid polaroid'
+      'quote quote';
+  }
+
+  .polaroid4-image-container, .polaroid4-image-container img, .bloem3-image-container, .bloem3-image-container img {
+    max-width: 88%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .bloem3-image {
+    left: 25vw;
+    top: 9rem;
+  }
+
+  .tokio-article {
+    max-width: 100%;
+  }
+
+  .eye-p {
+    max-width: 100%;
+  }
+
+  .regi .container {
+    margin-top: 6rem;
+    grid-template: repeat(2, auto) / 1fr 1fr;
+    grid-row-gap: 2rem;
+    grid-template-areas:
+      'image image'
+      'p1 p1';
+  }
+
+  .sofia-window-image_container img, .sofia-window-image-container source, .sofia-window-image {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+  }
+
+  .sofia-window-image-container {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .bloem4-image {
+    right: 0;
+    top: 24rem;
+  }
+
+  .diamant-image {
+    right: 5rem;
+  }
+
+  .footer .container {
+    grid-template-areas:
+      'lees lees'
+      'hoogte hoogte'
+      'end end';
+  }
+  .lees {
+    max-width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  .container {
+    background-color: pink;
+  }
 }
