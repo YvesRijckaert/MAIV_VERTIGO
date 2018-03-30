@@ -1,67 +1,54 @@
 [
   {
-    "vraag": "Dit is vraag 1?",
+    "vraag": "Hoe zou jij jezelf beschrijven?",
     "antwoorden": [
       {
-        "personage": "Personage1",
-        "content": "Lorem"
+        "personage": "Lux Lisbon - The Virgin Suicides",
+        "content": "Mooi, avontuurlijk en een echte rebel."
       },
       {
-        "personage": "Personage2",
-        "content": "Ipsum"
+        "personage": "Nicki Moore - The Bling Ring",
+        "content": "Roem zoeker, geobsedeerd met jezelf, narcistisch"
       }
     ]
   },
   {
-    "vraag": "Dit is vraag 2?",
+    "vraag": "Wat zijn jouw toekomstplannen?",
     "antwoorden": [
       {
-        "personage": "Personage1",
-        "content": "Sid"
+        "personage": "Lux Lisbon - The Virgin Suicides",
+        "content": "Verhuizen, onafhankelijk worden"
       },
       {
-        "personage": "Personage2",
-        "content": "Amet"
+        "personage": "Nicki Moore - The Bling Ring",
+        "content": "Model of actrice worden"
       }
     ]
   },
   {
-    "vraag": "Dit is vraag 3?",
+    "vraag": "Wat zoek jij in vriendschap?",
     "antwoorden": [
       {
-        "personage": "Personage1",
-        "content": "Lorem"
+        "personage": "Lux Lisbon - The Virgin Suicides",
+        "content": "Je aan elkaar binden door diepe conversaties"
       },
       {
-        "personage": "Personage2",
-        "content": "Ipsum"
+        "personage": "Nicki Moore - The Bling Ring",
+        "content": "Uitgaan samen en plezier hebben"
       }
     ]
   },
   {
-    "vraag": "Dit is vraag 4?",
+    "vraag": "Spendeer je graag tijd met jouw familie?",
     "antwoorden": [
       {
-        "personage": "Personage1",
-        "content": "Amet"
+        "personage": "Lux Lisbon - The Virgin Suicides",
+        "content": "Helemaal niet, hoe sneller ik alleen ben hoe beter"
       },
       {
-        "personage": "Personage2",
-        "content": "Sid"
+        "personage": "Nicki Moore - The Bling Ring",
+        "content": "We doen soms dingen samen"
       }
     ]
   },
-  {
-    "vraag": "Dit is vraag 5?",
-    "antwoorden": [
-      {
-        "personage": "Personage1",
-        "content": "Lorem"
-      },
-      {
-        "personage": "Personage2",
-        "content": "Ipsum"
-      }
-    ]
-  }
 ]
